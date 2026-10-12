@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+.env/
+.env.example/
+myenv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment Variables
+.env
+
+# Google API Credentials
+config/google_credentials.json
+google_credentials.json
+config/google_oauth_credentials.json
+config/*.json
+
+# Logs
+logs/
+*.log
+
+# Temporary Files
+temp/
+*.tmp
+*.bak
+
+# Test Files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Model Cache
+models/cache/
+.cache/
+
+# Data Files
+data/*.pdf
+data/*.docx
+data/*.txt
+!data/README.md
+
+# Reports
+reports/*.pdf
+reports/*.csv
+reports/*.json
+!reports/README.md
+
+# OS Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Large Datasets
+cuad_contracts_txt/
+
+# Model Weights
+*.bin
+*.pth
+*.h5
+*.pkl
+
+.env.example

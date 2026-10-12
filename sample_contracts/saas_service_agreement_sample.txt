@@ -1,0 +1,271 @@
+SOFTWARE AS A SERVICE (SaaS) AGREEMENT
+
+This Software as a Service Agreement ("Agreement") is entered into as of March 1, 2025 ("Effective Date"), by and between CloudSync Technologies Ltd. ("Provider") and Enterprise Solutions Inc. ("Customer").
+
+RECITALS
+
+WHEREAS, Provider offers cloud-based project management software; and
+WHEREAS, Customer desires to subscribe to Provider's services subject to the terms herein.
+
+NOW, THEREFORE, in consideration of the mutual covenants set forth herein, the parties agree as follows:
+
+ARTICLE 1 - DEFINITIONS
+
+1.1 "Services" means Provider's cloud-based project management platform, including all updates and support.
+
+1.2 "Customer Data" means all data, content, and materials submitted by Customer to the Services.
+
+1.3 "Authorized Users" means Customer's employees and contractors authorized to access the Services.
+
+1.4 "Confidential Information" means non-public information disclosed by either party marked as confidential.
+
+ARTICLE 2 - SERVICE PROVISION
+
+2.1 License Grant
+Provider grants Customer a non-exclusive, non-transferable, worldwide license to access and use the Services during the Term solely for Customer's internal business purposes.
+
+2.2 Service Level Agreement
+Provider commits to 99.9% uptime per calendar month, measured excluding scheduled maintenance. Monthly service credits apply for downtime exceeding this threshold as specified in Exhibit A.
+
+2.3 Support Services
+Provider shall provide email and chat support during business hours (9 AM - 6 PM EST, Monday-Friday) and emergency support 24/7 for critical issues affecting system availability.
+
+ARTICLE 3 - CUSTOMER OBLIGATIONS
+
+3.1 Authorized Use
+Customer shall use the Services only for lawful purposes and in accordance with this Agreement. Customer is responsible for all activities under its account.
+
+3.2 Account Security
+Customer must maintain confidentiality of login credentials and notify Provider immediately of any unauthorized access or security breach.
+
+3.3 Restrictions
+Customer shall not: (a) reverse engineer the Services; (b) use the Services for the benefit of third parties; (c) interfere with system security features; (d) transmit malware or harmful code; or (e) exceed allocated usage limits without upgrading subscription.
+
+ARTICLE 4 - DATA PRIVACY AND SECURITY
+
+4.1 Data Ownership
+Customer retains all rights, title, and interest in Customer Data. Provider claims no ownership rights to Customer Data.
+
+4.2 Data Processing
+Provider processes Customer Data solely to provide the Services and as directed by Customer. Provider acts as a data processor under GDPR where applicable.
+
+4.3 Security Measures
+Provider implements industry-standard security measures including:
+
+(a) Encryption of data in transit using TLS 1.3 and at rest using AES-256;
+(b) Annual SOC 2 Type II audits with reports available upon request;
+(c) Network firewalls and intrusion detection systems;
+(d) Multi-factor authentication available to all users;
+(e) Regular security vulnerability assessments and penetration testing;
+(f) Employee background checks and security training;
+(g) Physical security controls at data center facilities.
+
+4.4 Data Backup and Recovery
+Provider performs automated daily backups of Customer Data with 30-day retention. Customer may request data restoration within 48 hours.
+
+4.5 Data Privacy Compliance
+Provider complies with GDPR, CCPA, and other applicable data protection laws. Provider maintains a Data Processing Addendum (DPA) as Exhibit B, which forms part of this Agreement.
+
+4.6 Sub-processors
+Provider may use sub-processors to provide the Services. Current sub-processors include Amazon Web Services (hosting), SendGrid (email delivery), and Stripe (payment processing). Provider shall notify Customer 30 days before adding new sub-processors.
+
+ARTICLE 5 - CONFIDENTIALITY
+
+5.1 Obligations
+Each party agrees to protect the other's Confidential Information using the same degree of care it uses for its own confidential information, but no less than reasonable care.
+
+5.2 Exceptions
+Confidential Information does not include information that: (a) is publicly available; (b) was rightfully known prior to disclosure; (c) is independently developed; or (d) must be disclosed by law.
+
+5.3 Duration
+Confidentiality obligations survive for 3 years after termination of this Agreement.
+
+ARTICLE 6 - DATA BREACH NOTIFICATION
+
+6.1 Incident Response
+If Provider becomes aware of unauthorized access to Customer Data, Provider shall:
+
+(a) Notify Customer within 24 hours of discovery;
+(b) Provide details of the incident including affected data categories;
+(c) Take immediate steps to mitigate the breach;
+(d) Cooperate with Customer's investigation;
+(e) Provide written incident report within 5 business days.
+
+6.2 Customer Obligations
+Customer is responsible for notifying affected individuals and regulatory authorities as required by applicable law. Provider shall provide reasonable assistance.
+
+ARTICLE 7 - INTELLECTUAL PROPERTY
+
+7.1 Provider IP
+Provider retains all rights to the Services, including software, documentation, and related intellectual property. No rights are granted except the limited license in Section 2.1.
+
+7.2 Customer IP
+Customer grants Provider a limited license to use Customer Data solely to provide the Services and for no other purpose.
+
+7.3 Feedback
+Customer may provide feedback on the Services. Provider may use such feedback without restriction or compensation.
+
+ARTICLE 8 - FEES AND PAYMENT
+
+8.1 Subscription Fees
+Customer shall pay subscription fees as set forth in the Order Form. Fees are based on the number of Authorized Users and selected service tier.
+
+8.2 Payment Terms
+Fees are payable annually in advance via credit card or wire transfer. Invoices are due within 30 days of invoice date.
+
+8.3 Price Increases
+Provider may increase fees upon 60 days' written notice. Increases take effect upon renewal of the subscription term.
+
+8.4 Taxes
+Fees exclude all sales, use, VAT, and other taxes. Customer is responsible for all taxes except those based on Provider's net income.
+
+8.5 Late Payment
+Late payments accrue interest at 1.5% per month. Provider may suspend Services if payment is more than 15 days overdue.
+
+ARTICLE 9 - TERM AND TERMINATION
+
+9.1 Term
+This Agreement commences on the Effective Date and continues for an initial term of one (1) year. The Agreement automatically renews for successive one-year terms unless either party provides 30 days' written notice of non-renewal.
+
+9.2 Termination for Cause
+Either party may terminate immediately upon written notice if the other party: (a) materially breaches this Agreement and fails to cure within 15 days; or (b) becomes insolvent or files for bankruptcy.
+
+9.3 Termination for Convenience
+Customer may terminate at any time with 30 days' notice, but no refunds will be provided for prepaid unused periods.
+
+9.4 Effect of Termination
+Upon termination: (a) Customer's access to Services ceases immediately; (b) Customer must pay all outstanding fees; (c) Provider will make Customer Data available for download for 30 days; and (d) Provider may delete Customer Data after 30 days unless legally required to retain.
+
+9.5 Survival
+Sections 4 (Data Privacy), 5 (Confidentiality), 7 (Intellectual Property), 10 (Warranties), 11 (Indemnification), 12 (Limitation of Liability), and 15 (General Provisions) survive termination.
+
+ARTICLE 10 - WARRANTIES AND DISCLAIMERS
+
+10.1 Provider Warranties
+Provider warrants that: (a) Services will perform materially as described in documentation; (b) Provider has rights to provide the Services; and (c) Services contain no known malware.
+
+10.2 Customer Warranties
+Customer warrants that: (a) it has authority to enter this Agreement; (b) Customer Data does not violate third-party rights; and (c) its use of Services complies with applicable laws.
+
+10.3 Disclaimer
+EXCEPT AS EXPRESSLY PROVIDED, SERVICES ARE PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+
+ARTICLE 11 - INDEMNIFICATION
+
+11.1 Provider Indemnification
+Provider shall defend, indemnify, and hold harmless Customer from claims that the Services infringe third-party intellectual property rights, provided Customer: (a) promptly notifies Provider; (b) grants Provider control of defense; and (c) cooperates reasonably.
+
+11.2 Customer Indemnification
+Customer shall defend, indemnify, and hold harmless Provider from claims arising from: (a) Customer Data; (b) Customer's breach of this Agreement; or (c) Customer's violation of applicable laws.
+
+11.3 Exclusive Remedy
+This Section 11 states each party's sole liability and exclusive remedy for indemnification matters.
+
+ARTICLE 12 - LIMITATION OF LIABILITY
+
+12.1 Cap on Liability
+EXCEPT FOR EXCLUDED CLAIMS, EACH PARTY'S TOTAL LIABILITY SHALL NOT EXCEED FEES PAID BY CUSTOMER IN THE 12 MONTHS PRECEDING THE CLAIM.
+
+12.2 Excluded Claims
+The liability cap does not apply to: (a) breaches of confidentiality; (b) data breaches caused by gross negligence or willful misconduct; (c) indemnification obligations; or (d) Customer's payment obligations.
+
+12.3 Consequential Damages
+NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST DATA, OR BUSINESS INTERRUPTION, EVEN IF ADVISED OF POSSIBILITY.
+
+ARTICLE 13 - COMPLIANCE AND AUDIT
+
+13.1 Compliance with Laws
+Each party shall comply with all applicable laws, including data protection, privacy, export control, and anti-corruption laws.
+
+13.2 Audit Rights
+Customer may audit Provider's compliance with this Agreement once per year upon 30 days' notice during business hours. Audits must not unreasonably interfere with Provider's operations.
+
+13.3 Records Retention
+Provider shall maintain records of data processing activities for at least 3 years to demonstrate compliance with privacy obligations.
+
+ARTICLE 14 - INSURANCE
+
+14.1 Coverage Requirements
+Provider maintains: (a) cyber liability insurance with minimum coverage of $5 million per occurrence; (b) errors and omissions insurance of $3 million; and (c) general commercial liability of $2 million.
+
+14.2 Certificates
+Provider shall provide certificates of insurance upon request.
+
+ARTICLE 15 - GENERAL PROVISIONS
+
+15.1 Governing Law
+This Agreement is governed by the laws of the State of California, excluding conflict of law provisions.
+
+15.2 Dispute Resolution
+Parties agree to first attempt good-faith negotiation. If unresolved within 30 days, disputes shall be resolved through binding arbitration under AAA Commercial Arbitration Rules in San Francisco, California.
+
+15.3 Entire Agreement
+This Agreement, including all exhibits, constitutes the entire agreement and supersedes all prior agreements between the parties regarding its subject matter.
+
+15.4 Amendments
+No amendments are valid unless in writing and signed by both parties.
+
+15.5 Notices
+All notices must be in writing and sent to the addresses below or as updated in writing:
+
+Provider: CloudSync Technologies Ltd., Legal Department, 789 Innovation Drive, San Francisco, CA 94103, legal@cloudsync.tech
+
+Customer: Enterprise Solutions Inc., Contracts Team, 321 Business Plaza, New York, NY 10001, contracts@enterprisesol.com
+
+15.6 Force Majeure
+Neither party is liable for delays or failures due to causes beyond reasonable control, including natural disasters, war, terrorism, labor disputes, or government actions.
+
+15.7 Assignment
+Neither party may assign this Agreement without prior written consent, except to a successor in a merger or acquisition. Any unauthorized assignment is void.
+
+15.8 Severability
+If any provision is held invalid, the remaining provisions remain in full effect.
+
+15.9 Waiver
+Failure to enforce any right does not waive that right or any other right.
+
+15.10 Independent Contractors
+Parties are independent contractors. Nothing creates a partnership, joint venture, or agency relationship.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
+PROVIDER: CloudSync Technologies Ltd.
+By: ___________________________
+Name: David Martinez
+Title: Chief Executive Officer
+Date: March 1, 2025
+
+CUSTOMER: Enterprise Solutions Inc.
+By: ___________________________
+Name: Jennifer Lee
+Title: Chief Technology Officer
+Date: March 1, 2025
+
+
+EXHIBIT A - SERVICE LEVEL AGREEMENT (SLA)
+
+1. Uptime Commitment: 99.9% per calendar month
+2. Planned Maintenance: Excluded from uptime calculation; minimum 48 hours notice
+3. Service Credits:
+   - 99.0% - 99.9% uptime: 10% monthly fee credit
+   - 95.0% - 98.9% uptime: 25% monthly fee credit
+   - Below 95.0% uptime: 50% monthly fee credit
+4. Credit Request: Must be submitted within 15 days of incident
+5. Response Times:
+   - Critical (system down): 1 hour
+   - High (major functionality impaired): 4 hours
+   - Medium (minor functionality issue): 1 business day
+   - Low (general questions): 2 business days
+
+
+EXHIBIT B - DATA PROCESSING ADDENDUM
+
+[Standard GDPR-compliant DPA incorporating Standard Contractual Clauses for international transfers, sub-processor provisions, data subject rights assistance, security measures, breach notification procedures, and audit rights as required under Articles 28 and 46 of GDPR]
+
+Processing Details:
+- Subject Matter: Provision of cloud-based project management services
+- Duration: Term of the Agreement
+- Nature and Purpose: Hosting and processing of project data, user authentication, analytics
+- Personal Data Categories: Names, email addresses, job titles, IP addresses, usage data
+- Data Subject Categories: Customer employees and contractors
+- Special Categories: None unless Customer uploads such data contrary to terms

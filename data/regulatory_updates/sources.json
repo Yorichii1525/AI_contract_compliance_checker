@@ -1,0 +1,165 @@
+[
+  {
+    "source_id": "gdpr_ec_europa_eu",
+    "name": "GDPR - ec.europa.eu",
+    "url": "https://ec.europa.eu",
+    "framework": "GDPR",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "data protection",
+      "privacy",
+      "EDPB",
+      "Article 5",
+      "DPO"
+    ]
+  },
+  {
+    "source_id": "gdpr_edpb_europa_eu",
+    "name": "GDPR - edpb.europa.eu",
+    "url": "https://edpb.europa.eu",
+    "framework": "GDPR",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "data protection",
+      "privacy",
+      "EDPB",
+      "Article 5",
+      "DPO"
+    ]
+  },
+  {
+    "source_id": "gdpr_eur-lex_europa_eu",
+    "name": "GDPR - eur-lex.europa.eu",
+    "url": "https://eur-lex.europa.eu",
+    "framework": "GDPR",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "data protection",
+      "privacy",
+      "EDPB",
+      "Article 5",
+      "DPO"
+    ]
+  },
+  {
+    "source_id": "hipaa_hhs_gov",
+    "name": "HIPAA - hhs.gov",
+    "url": "https://hhs.gov",
+    "framework": "HIPAA",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "health information",
+      "PHI",
+      "covered entity",
+      "business associate"
+    ]
+  },
+  {
+    "source_id": "hipaa_ocr_hhs_gov",
+    "name": "HIPAA - ocr.hhs.gov",
+    "url": "https://ocr.hhs.gov",
+    "framework": "HIPAA",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "health information",
+      "PHI",
+      "covered entity",
+      "business associate"
+    ]
+  },
+  {
+    "source_id": "hipaa_federalregister_gov",
+    "name": "HIPAA - federalregister.gov",
+    "url": "https://federalregister.gov",
+    "framework": "HIPAA",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "health information",
+      "PHI",
+      "covered entity",
+      "business associate"
+    ]
+  },
+  {
+    "source_id": "ccpa_oag_ca_gov",
+    "name": "CCPA - oag.ca.gov",
+    "url": "https://oag.ca.gov",
+    "framework": "CCPA",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "consumer privacy",
+      "personal information",
+      "data sale",
+      "opt-out"
+    ]
+  },
+  {
+    "source_id": "ccpa_cppa_ca_gov",
+    "name": "CCPA - cppa.ca.gov",
+    "url": "https://cppa.ca.gov",
+    "framework": "CCPA",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "consumer privacy",
+      "personal information",
+      "data sale",
+      "opt-out"
+    ]
+  },
+  {
+    "source_id": "sox_sec_gov",
+    "name": "SOX - sec.gov",
+    "url": "https://sec.gov",
+    "framework": "SOX",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "financial reporting",
+      "internal controls",
+      "audit",
+      "Section 404"
+    ]
+  },
+  {
+    "source_id": "sox_pcaob_org",
+    "name": "SOX - pcaob.org",
+    "url": "https://pcaob.org",
+    "framework": "SOX",
+    "source_type": "Official",
+    "check_frequency_hours": 24,
+    "last_checked": null,
+    "is_active": true,
+    "keywords": [
+      "financial reporting",
+      "internal controls",
+      "audit",
+      "Section 404"
+    ]
+  }
+]

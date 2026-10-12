@@ -1,0 +1,297 @@
+-- PAGE 1 ---
+
+Project: AI Contract Compliance Reviewer [source: 1]
+Subject: Granular HIPAA Contractual Requirements (Expanded) [source: 1]
+Use Case: This document provides a granular checklist with descriptions for an AI system to detect specific clauses, assess risks, and recommend amendments in Business Associate Agreements (BAAs). [source: 1]
+
+🔵 SECTION 1 — PRIVACY RULE & GENERAL OBLIGATIONS [source: 2]
+
+A. Definitions & Scope [source: 3]
+
+Clause: Clearly defines "Protected Health Information (PHI)" and "ePHI".
+
+Description: The contract must explicitly define "Protected Health Information" (and its electronic form, "ePHI") consistent with HIPAA's legal definition (45 CFR §160.103). This ensures both parties are bound by the same understanding of what data is protected. Look for references to individually identifiable health information. [source: 3]
+
+Clause: Clearly defines "Business Associate (BA)" and "Covered Entity (CE)".
+
+Description: The contract must identify which party is the "Covered Entity" (e.g., the hospital, insurer) and which is the "Business Associate" (the vendor, you). This establishes the legal roles and responsibilities under HIPAA. [source: 3]
+
+Clause: Clearly defines "Subcontractor".
+
+Description: The BAA should define a "Subcontractor" as any entity to whom the Business Associate delegates a function, activity, or service involving PHI. This is critical for ensuring compliance "flows down" to all parties handling the data. [source: 3]
+
+Clause: Establishes specific permitted uses of PHI by the BA.
+
+Description: This is the core "scope of work" clause. It must detail exactly what the BA is allowed to do with the PHI to perform its services for the CE (e.g., "for data storage," "to process claims"). Any use not listed here is implicitly forbidden. [source: 3]
+
+Clause: Establishes specific required uses of PHI by the BA.
+
+Description: This section outlines tasks the BA must perform, which often relate to compliance. Look for phrases like "BA shall make PHI available for..." individual access requests or "BA shall provide..._ to the Secretary of HHS. [source: 3]
+
+Clause: Explicitly forbids any use/disclosure of PHI not permitted by the contract or law.
+
+Description: This is a critical legal backstop. The contract must state that the BA shall not use or further disclose PHI in any way other than what is permitted by the BAA or "Required By Law." This prevents data misuse. [source: 3]
+
+Clause: Requires BA to adhere to the "Minimum Necessary" principle.
+
+Description: The BA must agree to limit its requests, uses, and disclosures of PHI to the "minimum necessary" amount of information required to accomplish the intended purpose. The AI should check for this specific phrase. [source: 3]
+
+Clause: Specifies BA's obligations for PHI it creates on behalf of the CE.
+
+Description: The contract must clarify that any PHI the BA creates (e.g., a derived report, a new record) is protected to the same extent as the PHI it receives from the CE. [source: 3]
+
+Clause: Specifies BA's obligations for PHI it receives from the CE.
+
+Description: This clause confirms that all PHI received from the CE (or from another BA on the CE's behalf) is subject to the terms of this BAA. It establishes the chain of custody and responsibility. [source: 3]
+
+B. Prohibited Uses (Privacy Rule) [source: 4]
+10. Clause: Prohibits BA from using PHI for Marketing without explicit authorization.
+* Description: The BAA must forbid the BA from using PHI for marketing purposes unless the contract specifically states it is for a marketing activity and the CE has obtained (or will obtain) valid authorization from each individual. [source: 4]
+
+Clause: Prohibits BA from the Sale of PHI without explicit authorization.
+
+Description: Look for an explicit prohibition on the "Sale of PHI." This is a default requirement under the Omnibus Rule. Any contract permitting the sale of PHI is a major red flag and requires individual authorization. [source: 4]
+
+Clause: Prohibits BA from using/disclosing Psychotherapy Notes (unless specified).
+
+Description: If the CE will be sending psychotherapy notes (which have special protections), the BAA must have specific, separate language governing their use. For most BAAs, this should be explicitly excluded or prohibited. [source: 4]
+
+Clause: Addresses use of PHI for Fundraising (must allow opt-out).
+
+Description: If the BA is performing fundraising activities for the CE, the contract must state that individuals must be given a clear and easy way to "opt out" of receiving future fundraising communications. [source: 4]
+
+C. Individual Rights (BA's Role) [source: 5]
+14. Clause: Requires BA to assist CE with "Right of Access" (within 30 days).
+* Description: The BA must agree to make PHI in its possession available to the CE so the CE can respond to an individual's request for their own data. The BAA may specify a timeframe (e.g., "within 15 days") to ensure the CE can meet its 30-day deadline. [source: 5]
+
+Clause: Requires BA to assist CE with "Right to Amend" PHI.
+
+Description: The BA must agree to make PHI available for amendment and to incorporate any amendments to the PHI as directed by the CE. This ensures the data remains accurate across systems. [source: 5]
+
+Clause: Requires BA to assist CE with "Right to an Accounting of Disclosures".
+
+Description: The BA must agree to track its disclosures of PHI (if any) and provide this information to the CE upon request. This allows the CE to fulfill an individual's right to know where their information has been sent. [source: 5]
+
+Clause: Requires BA to assist CE with "Right to Request Restrictions".
+
+Description: The BA must agree to comply with any restrictions on the use or disclosure of PHI that the CE has agreed to with an individual (e.g., not disclosing to an insurer if the individual paid out-of-pocket). [source: 5]
+
+--- PAGE 2 ---
+
+🔵 SECTION 2 — SECURITY RULE: ADMINISTRATIVE SAFEGUARDS [source: 6]
+
+Clause: Requires BA to implement all Administrative Safeguards (45 CFR §164.308).
+
+Description: The BAA must have a general clause stating the BA will implement the Administrative Safeguards of the Security Rule. This is a "catch-all" that legally binds the BA to the entire section of the law, including policies, procedures, and workforce training. [source: 6]
+
+Clause: Requires BA to conduct a formal, periodic Risk Analysis.
+
+Description: The BA must agree to conduct (and make available) an accurate and thorough assessment of the potential risks and vulnerabilities to the confidentiality, integrity, and availability of ePHI it holds. This is the foundation of the Security Rule. [source: 6]
+
+Clause: Requires BA to implement a Risk Management plan.
+
+Description: Following the risk analysis, the BA must agree to implement security measures sufficient to reduce those identified risks and vulnerabilities to a reasonable and appropriate level. [source: 6]
+
+Clause: Requires BA to maintain a Sanction Policy for its workforce.
+
+Description: The BA must agree that it has and will apply appropriate sanctions (i.e., disciplinary action) against members of its workforce who fail to comply with its own HIPAA security policies and procedures. [source: 6]
+
+Clause: Requires BA to implement Information System Activity Review (log review).
+
+Description: The BA must agree to implement procedures to regularly review records of information system activity, such as audit logs, access reports, and security incident tracking reports, to detect and respond to potential unauthorized access. [source: 6]
+
+Clause: Warrants that BA has appointed a Security Officer.
+
+Description: The BAA should include a warranty or statement that the BA has designated a specific, named individual (or role) as its Security Officer, who is responsible for developing and implementing its security policies. [source: 6]
+
+Clause: Requires BA to manage workforce access (authorization/supervision).
+
+Description: The BA must agree to implement procedures to ensure its workforce (employees, contractors) has appropriate access to ePHI and is supervised to prevent unauthorized access. [source: 6]
+
+Clause: Requires BA to have workforce Termination Procedures (access removal).
+
+Description: The BA must agree to have procedures in place to immediately terminate a workforce member's access to ePHI when their employment or engagement ends. [source: 6]
+
+Clause: Requires BA to implement Role-Based Access Controls.
+
+Description: This clause (part of "Information Access Management") requires the BA to implement policies that limit access to ePHI to only those persons or software programs that require access to perform their job functions. [source: 6]
+
+Clause: Requires BA to provide Security Awareness Training to its staff.
+
+Description: The BA must agree to implement and maintain an ongoing security awareness and training program for all members of its workforce (including management) who handle ePHI. [source: 6]
+
+Clause: Requires BA to provide training/reminders on Malware Protection.
+
+Description: As part of its training, the BA must agree to educate its workforce on detecting, reporting, and protecting against malicious software (viruses, ransomware, phishing). [source: 6]
+
+Clause: Requires BA to provide training/reminders on Log-in Monitoring.
+
+Description: The BA must agree to procedures for monitoring log-in attempts and reporting discrepancies. This is part of the overall security awareness and incident detection process. [source: 6]
+
+Clause: Requires BA to provide training/reminders on Password Management.
+
+Description: The BA must agree to train its workforce on best practices for creating, changing, and safeguarding passwords to protect system access. [source: 6]
+
+Clause: Requires BA to have formal Security Incident Procedures.
+
+Description: The BA must agree to have policies to "identify and respond" to suspected or known security incidents. This includes mitigating harmful effects and documenting the incident and its outcome. [source: 6]
+
+Clause: Requires BA to have a Data Backup Plan (Contingency).
+
+Description: The BA must agree to have a formal plan to create and maintain exact, retrievable copies of ePHI. This is a core part of disaster recovery. [source: 6]
+
+Clause: Requires BA to have a Disaster Recovery Plan (Contingency).
+
+Description: The BA must agree to have a plan to restore any loss of data and to recover access to its systems in the event of a disaster (e.g., fire, flood, cyberattack). [source: 6]
+
+Clause: Requires BA to have an Emergency Mode Operation Plan (Contingency).
+
+Description: The BA must agree to have procedures to enable continuation of critical business processes for protecting ePHI while operating in an "emergency mode" (i.e., during or after a disaster). [source: 6]
+
+Clause: Requires BA to conduct periodic Evaluations of its security program.
+
+Description: The BA must agree to perform periodic technical and non-technical evaluations of its security policies and procedures to ensure they are effective and in compliance with the Security Rule. [source: 6]
+
+--- PAGE 3 ---
+
+🔵 SECTION 3 — SECURITY RULE: PHYSICAL SAFEGUARDS [source: 7]
+
+Clause: Requires BA to implement all Physical Safeguards (45 CFR §164.310).
+
+Description: The BAA must contain a general clause stating the BA will implement the Physical Safeguards of the Security Rule. This legally binds the BA to protect the physical security of its facilities and the hardware containing ePHI. [source: 7]
+
+Clause: Requires BA to have Facility Access Controls (limit physical access).
+
+Description: The BA must agree to implement policies to limit physical access to its facilities (datacenters, offices) where ePHI is stored, while ensuring authorized personnel still have access. [source: 7]
+
+Clause: Requires BA to have a Facility Security Plan.
+
+Description: The BA must agree to have policies to safeguard its facility and equipment from unauthorized physical access, theft, and environmental hazards. [source: 7]
+
+Clause: Requires BA to have procedures for Access Control & Validation (badges, keys).
+
+Description: The BA must agree to have procedures to verify the identity and authorization of individuals (e.g., visitors, staff) before granting them physical access to sensitive areas. [source: 7]
+
+Clause: Requires BA to maintain Maintenance Records for physical security.
+
+Description: The BA must agree to document repairs and modifications to the physical components of its facility that are related to security (e.g., locks, alarms). [source: 7]
+
+Clause: Requires BA to implement physical safeguards for Workstations.
+
+Description: The BA must agree to implement policies to protect all workstations (laptops, desktops, terminals) that access ePHI, regardless of their location, from unauthorized physical access or theft. [source: 7]
+
+Clause: Requires BA to have policies on Workstation screen visibility.
+
+Description: The BA must agree to position screens and devices that display ePHI in a way that prevents unauthorized viewing (e.g., away from high-traffic areas, use of privacy screens). [source: 7]
+
+Clause: Requires BA to have policies defining appropriate Workstation Use.
+
+Description: The BA must agree to have policies that specify the proper functions to be performed and the manner in which they are to be performed on workstations that access ePHI. [source: 7]
+
+Clause: Requires BA to have policies for secure Disposal of media containing ePHI.
+
+Description: The BA must agree to have policies for the final disposal of ePHI and the hardware (hard drives, tapes) or electronic media on which it is stored, ensuring it is rendered unreadable and irretrievable. [source: 7]
+
+Clause: Requires BA to have policies for media Re-Use (sanitization/degaussing).
+
+Description: The BA must agree to have procedures to securely sanitize media (e.g., via degaussing or wiping) before it can be re-used for other purposes. [source: 7]
+
+Clause: Requires BA to maintain accountability/logs for media movement.
+
+Description: The BA must agree to maintain records of the movements of hardware and electronic media (e.g., backup tapes) and any person responsible for them. [source: 7]
+
+Clause: Requires BA to have policies for secure Transport of devices/media.
+
+Description: The BA must agree to implement policies to protect electronic media when it is being physically transported (e.g., encrypting a laptop before an employee travels with it). [source: 7]
+
+🔵 SECTION 4 — SECURITY RULE: TECHNICAL SAFEGUARDS [source: 8]
+
+Clause: Requires BA to implement all Technical Safeguards (45 CFR §164.312).
+
+Description: The BAA must have a general clause stating the BA will implement the Technical Safeguards of the Security Rule. This legally binds the BA to use technology to protect ePHI, particularly in its information systems. [source: 8]
+
+Clause: Requires BA to use Unique User IDs for its workforce.
+
+Description: The BA must agree to assign a unique name or number for identifying and tracking each user's identity. This prevents the use of shared or generic logins. [source: 8]
+
+Clause: Requires BA to have Emergency Access Procedures (for its own systems).
+
+Description: The BA must agree to have procedures in place to allow authorized personnel to access ePHI during an emergency (e.g., a "break-glass" procedure for a system administrator). [source: 8]
+
+Clause: Requires BA to use Automatic Logoff mechanisms.
+
+Description: The BA must agree to implement electronic procedures that automatically terminate an electronic session after a predetermined period of inactivity, preventing unattended, logged-in workstations. [source: 8]
+
+Clause: Requires BA to Encrypt ePHI at rest (Addressable, but a modern standard).
+
+Description: The BA must agree to implement a mechanism to encrypt ePHI that is stored on its systems (e.g., on hard drives, in databases, in backups). While "addressable" under HIPAA, this is a non-negotiable modern security standard. [source: 8]
+
+Clause: Requires BA to Encrypt ePHI in transit (Transmission Security).
+
+Description: The BA must agree to implement technical measures to guard against unauthorized access to ePHI that is being transmitted over an electronic network (e.g., using TLS/SSL for web traffic, or VPNs). [source: 8]
+
+Clause: Requires BA to implement Audit Controls (logging system activity).
+
+Description: The BA must agree to implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use ePHI. [source: 8]
+
+Clause: Requires BA to implement Integrity Controls (to detect tampering).
+
+Description: The BA must agree to have policies to protect ePHI from improper alteration or destruction. This includes mechanisms to verify that ePHI has not been tampered with (e.g., checksums). [source: 8]
+
+Clause: Requires BA to use Person/Entity Authentication (passwords, 2FA, etc.).
+
+Description: The BA must agree to implement procedures to verify that a person or entity seeking access to ePHI is the one claimed (e.g., requiring strong passwords, multi-factor authentication). [source: 8]
+
+--- PAGE 4 ---
+
+🔵 SECTION 5 — BREACH, HITECH & OMNIBUS RULE [source: 9]
+
+Clause: Acknowledges BA's Direct Liability for HIPAA violations (Omnibus Rule).
+
+Description: The BAA must reflect the 2013 Omnibus Rule, which makes BAs directly liable for failing to comply with the Security Rule, parts of the Privacy Rule, and the Breach Notification Rule. The contract should not attempt to waive this liability. [source: 9]
+
+Clause: Requires BA to report any Security Incident (not just breaches) to CE.
+
+Description: The BA must agree to report all security incidents (including failed attempts) to the CE, even if they do not result in a data breach. The contract may specify the timing and format for this (e.g., "in a monthly report"). [source: 9]
+
+Clause: Requires BA to report any Breach of Unsecured PHI to CE.
+
+Description: The BA must agree to report any successful breach of unsecured PHI to the CE. "Unsecured PHI" is data that is not rendered unusable, unreadable, or indecipherable (i.e., it was not encrypted). [source: 9]
+
+Clause: Specifies a timeframe for breach reporting (e.g., "without unreasonable delay" and no later than 60 days).
+
+Description: The BAA must require the BA to notify the CE of a breach "without unreasonable delay" and, in all cases, no later than 60 days after discovery. Many CEs will contractually require much faster reporting (e.g., 24-72 hours) so they can meet their own deadlines. [source: 9]
+
+Clause: Requires BA to assist CE in breach investigation and individual notification.
+
+Description: The BA must agree to cooperate fully with the CE's investigation of a breach and provide all necessary information for the CE to notify affected individuals, HHS, and (if necessary) the media. [source: 9]
+
+Clause: Requires BA to mitigate harmful effects of any breach.
+
+Description: The BA must agree to "mitigate, to the extent practicable," any harmful effect of a security incident or breach that is known to the BA. This is an active, required response, not a passive one. [source: 9]
+
+🔵 SECTION 6 — SUBCONTRACTORS & TERMINATION [source: 10]
+
+Clause: Requires BA to have compliant BAAs with all Subcontractors ("flow-down").
+
+Description: This is a critical "flow-down" provision. The BA must agree to enter into a formal, HIPAA-compliant BAA with any of its own subcontractors that will create, receive, maintain, or transmit PHI on its behalf. [source: 10]
+
+Clause: Acknowledges Subcontractor's Direct Liability (Omnibus Rule).
+
+Description: The BAA between the BA and its subcontractor must, in turn, make the subcontractor directly liable for its own HIPAA violations, just as the BA is. [source: 10]
+
+Clause: Allows CE to terminate BAA if BA commits a material breach.
+
+Description: The contract must state that the CE has the right to terminate the BAA and the underlying services contract if the BA commits a "material breach" of its HIPAA obligations and fails to cure that breach. [source: 10]
+
+Clause: Requires BA to Return or Destroy all PHI upon contract termination.
+
+Description: This clause must outline the BA's duties when the contract ends. The BA must agree to (at the CE's choice) return all PHI to the CE or securely destroy all PHI in its possession, including all copies. [source: 10]
+
+Clause: Requires BA to extend PHI protections indefinitely if return/destruction is infeasible.
+
+Description: If the BA (or its subcontractor) cannot feasibly return or destroy the PHI (e.g., in backup archives), the BAA must state that the data's protections will "survive termination" and continue indefinitely. [source: 10]
+
+Clause: Requires BA to make its practices and records available to the Secretary of HHS for audits.
+
+Description: The BA must agree to make its internal practices, books, and records related to PHI use and disclosure available to the Secretary of Health and Human Services (HHS) for the purpose of determining compliance. [source: 10]

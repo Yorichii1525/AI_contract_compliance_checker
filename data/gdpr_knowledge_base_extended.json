@@ -1,0 +1,2442 @@
+{
+  "metadata": {
+    "source": "GDPR Regulation (EU) 2016/679",
+    "extracted_date": "2025-11-13T18:44:07.444204",
+    "total_requirements": 176,
+    "framework": "GDPR"
+  },
+  "requirements": [
+    {
+      "requirement_id": "GDPR_ART01_00",
+      "framework": "GDPR",
+      "article_number": "Article 1",
+      "title": "Subject-matter and objectiv es",
+      "description": "1. This Regulation lays down rules relating to the prote ction of natural persons with rega rd to the processing of",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART01_01",
+      "framework": "GDPR",
+      "article_number": "Article 1.1",
+      "title": "Subject-matter and objectiv es - Paragraph 1",
+      "description": "This Regulation lays down rules relating to the prote ction of natural persons with rega rd to the processing of",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART02_00",
+      "framework": "GDPR",
+      "article_number": "Article 2",
+      "title": "Mater ial scope",
+      "description": "1. This Regulation applies to the processing of personal data wholly or partly by automat ed means and to the",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART02_01",
+      "framework": "GDPR",
+      "article_number": "Article 2.1",
+      "title": "Mater ial scope - Paragraph 1",
+      "description": "This Regulation applies to the processing of personal data wholly or partly by automat ed means and to the",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART03_00",
+      "framework": "GDPR",
+      "article_number": "Article 3",
+      "title": "Territor ial scope",
+      "description": "1. This Regulation applies to the processing of personal data in the conte xt of the activities of an establishment of a",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART03_01",
+      "framework": "GDPR",
+      "article_number": "Article 3.1",
+      "title": "Territor ial scope - Paragraph 1",
+      "description": "This Regulation applies to the processing of personal data in the conte xt of the activities of an establishment of a",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART04_00",
+      "framework": "GDPR",
+      "article_number": "Article 4",
+      "title": "Def initions",
+      "description": "For the purposes of this Regulation:",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART05_00",
+      "framework": "GDPR",
+      "article_number": "Article 5",
+      "title": "Principles relating to processing of personal data",
+      "description": "1. Personal data shall be:",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART05_01",
+      "framework": "GDPR",
+      "article_number": "Article 5.1",
+      "title": "Principles relating to processing of personal data - Paragraph 1",
+      "description": "Personal data shall be:",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Processing",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART06_00",
+      "framework": "GDPR",
+      "article_number": "Article 6",
+      "title": "Lawfulness of processing",
+      "description": "1. Processing shall be lawful only if and to the extent that at least one of the following applies:",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART06_01",
+      "framework": "GDPR",
+      "article_number": "Article 6.1",
+      "title": "Lawfulness of processing - Paragraph 1",
+      "description": "Processing shall be lawful only if and to the extent that at least one of the following applies:",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Processing",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART07_00",
+      "framework": "GDPR",
+      "article_number": "Article 7",
+      "title": "Conditions for consent",
+      "description": "1. Where processing is based on consent, the controller shall be able to demonstrate that the data subject has",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Consent Management",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "consent",
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART07_01",
+      "framework": "GDPR",
+      "article_number": "Article 7.1",
+      "title": "Conditions for consent - Paragraph 1",
+      "description": "Where processing is based on consent, the controller shall be able to demonstrate that the data subject has",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Consent Management",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "consent",
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART08_00",
+      "framework": "GDPR",
+      "article_number": "Article 8",
+      "title": "Conditions applicable to child's consent in relation to informa tion society services",
+      "description": "1. Where point (a) of",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Consent Management",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "consent"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART09_00",
+      "framework": "GDPR",
+      "article_number": "Article 9",
+      "title": "Processing of special categor ies of personal data",
+      "description": "1. Processing of personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART09_01",
+      "framework": "GDPR",
+      "article_number": "Article 9.1",
+      "title": "Processing of special categor ies of personal data - Paragraph 1",
+      "description": "Processing of personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Processing",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART10_00",
+      "framework": "GDPR",
+      "article_number": "Article 10",
+      "title": "Processing of personal data relating to criminal convictions and offences",
+      "description": "Processing of personal data relating to criminal convictions and offences or relat ed secur ity measures based on",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART11_00",
+      "framework": "GDPR",
+      "article_number": "Article 11",
+      "title": "Processing which does not require identif ication",
+      "description": "1. If the purposes for which a controller processes personal data do not or do no longer require the identif ication of",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART11_01",
+      "framework": "GDPR",
+      "article_number": "Article 11.1",
+      "title": "Processing which does not require identif ication - Paragraph 1",
+      "description": "If the purposes for which a controller processes personal data do not or do no longer require the identif ication of",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART12_00",
+      "framework": "GDPR",
+      "article_number": "Article 12",
+      "title": "Transparent information, communication and modalities for the exercise of the rights of the data",
+      "description": "subject",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Transparency",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART13_00",
+      "framework": "GDPR",
+      "article_number": "Article 13",
+      "title": "Informa tion to be provided where personal data are collected from the data subject",
+      "description": "1. Where personal data relating to a data subject are collect ed from the data subject, the controller shall, at the time",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Transparency",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART13_01",
+      "framework": "GDPR",
+      "article_number": "Article 13.1",
+      "title": "Informa tion to be provided where personal data are collected from the data subject - Paragraph 1",
+      "description": "Where personal data relating to a data subject are collect ed from the data subject, the controller shall, at the time",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Transparency",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART14_00",
+      "framework": "GDPR",
+      "article_number": "Article 14",
+      "title": "Information to be provided where personal data have not been obtained from the data subject",
+      "description": "1. Where personal data have not been obtained from the data subject, the controller shall provide the data subject",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Transparency",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART14_01",
+      "framework": "GDPR",
+      "article_number": "Article 14.1",
+      "title": "Information to be provided where personal data have not been obtained from the data subject - Paragraph 1",
+      "description": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Transparency",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART15_00",
+      "framework": "GDPR",
+      "article_number": "Article 15",
+      "title": "Right of access by the data subject",
+      "description": "1. The data subject shall have the right to obtain from the controller confir mation as to whether or not personal data",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART15_01",
+      "framework": "GDPR",
+      "article_number": "Article 15.1",
+      "title": "Right of access by the data subject - Paragraph 1",
+      "description": "The data subject shall have the right to obtain from the controller confir mation as to whether or not personal data",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART16_00",
+      "framework": "GDPR",
+      "article_number": "Article 16",
+      "title": "Right to rectif ication",
+      "description": "The data subject shall have the right to obtain from the controller without undue dela y the rectificati on of inaccurate",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART17_00",
+      "framework": "GDPR",
+      "article_number": "Article 17",
+      "title": "Right to erasure (‘right to be forgotten’)",
+      "description": "1. The data subject shall have the right to obtain from the controller the erasure of personal data concer ning him or",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART17_01",
+      "framework": "GDPR",
+      "article_number": "Article 17.1",
+      "title": "Right to erasure (‘right to be forgotten’) - Paragraph 1",
+      "description": "The data subject shall have the right to obtain from the controller the erasure of personal data concer ning him or",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART18_00",
+      "framework": "GDPR",
+      "article_number": "Article 18",
+      "title": "Right to restriction of processing",
+      "description": "1. The data subject shall have the right to obtain from the controller restr iction of processing where one of the",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART18_01",
+      "framework": "GDPR",
+      "article_number": "Article 18.1",
+      "title": "Right to restriction of processing - Paragraph 1",
+      "description": "The data subject shall have the right to obtain from the controller restr iction of processing where one of the",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processing",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART19_00",
+      "framework": "GDPR",
+      "article_number": "Article 19",
+      "title": "Notif ication obligation regarding rectif ication or erasure of personal data or restriction of",
+      "description": "processing",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART20_00",
+      "framework": "GDPR",
+      "article_number": "Article 20",
+      "title": "Right to data por tability",
+      "description": "1. The data subject shall have the right to receive the personal data concer ning him or her, whic h he or she has",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART20_01",
+      "framework": "GDPR",
+      "article_number": "Article 20.1",
+      "title": "Right to data por tability - Paragraph 1",
+      "description": "The data subject shall have the right to receive the personal data concer ning him or her, whic h he or she has",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART21_00",
+      "framework": "GDPR",
+      "article_number": "Article 21",
+      "title": "Right to object",
+      "description": "1. The data subject shall have the right to object, on grounds relating to his or her particular situation, at any time to",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART21_01",
+      "framework": "GDPR",
+      "article_number": "Article 21.1",
+      "title": "Right to object - Paragraph 1",
+      "description": "The data subject shall have the right to object, on grounds relating to his or her particular situation, at any time to",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART22_00",
+      "framework": "GDPR",
+      "article_number": "Article 22",
+      "title": "Automated individual decision-making, including prof iling",
+      "description": "1. The data subject shall have the right not to be subject to a decision based solely on automat ed processing,",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART22_01",
+      "framework": "GDPR",
+      "article_number": "Article 22.1",
+      "title": "Automated individual decision-making, including prof iling - Paragraph 1",
+      "description": "The data subject shall have the right not to be subject to a decision based solely on automat ed processing,",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processing",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART23_00",
+      "framework": "GDPR",
+      "article_number": "Article 23",
+      "title": "Rest rictions",
+      "description": "1. Union or Member State law to whic h the data controller or processor is subject may restr ict by way of a legislative",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART23_01",
+      "framework": "GDPR",
+      "article_number": "Article 23.1",
+      "title": "Rest rictions - Paragraph 1",
+      "description": "Union or Member State law to whic h the data controller or processor is subject may restr ict by way of a legislative",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART24_00",
+      "framework": "GDPR",
+      "article_number": "Article 24",
+      "title": "Responsibility of the controller",
+      "description": "1. Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART24_01",
+      "framework": "GDPR",
+      "article_number": "Article 24.1",
+      "title": "Responsibility of the controller - Paragraph 1",
+      "description": "Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART25_00",
+      "framework": "GDPR",
+      "article_number": "Article 25",
+      "title": "Data protection by design and by default",
+      "description": "1. Taking into account the state of the art, the cost of implementation and the nature, scope, conte xt and purposes of",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Security",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART25_01",
+      "framework": "GDPR",
+      "article_number": "Article 25.1",
+      "title": "Data protection by design and by default - Paragraph 1",
+      "description": "Taking into account the state of the art, the cost of implementation and the nature, scope, conte xt and purposes of",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Security",
+      "verification_method": "Document Review",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART26_00",
+      "framework": "GDPR",
+      "article_number": "Article 26",
+      "title": "Joint controllers",
+      "description": "1. Where two or more controllers jointly determine the purposes and means of processing, they shall be joint",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART26_01",
+      "framework": "GDPR",
+      "article_number": "Article 26.1",
+      "title": "Joint controllers - Paragraph 1",
+      "description": "Where two or more controllers jointly determine the purposes and means of processing, they shall be joint",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART27_00",
+      "framework": "GDPR",
+      "article_number": "Article 27",
+      "title": "Represent ativ es of controllers or processors not established in the Union",
+      "description": "1. Where",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART28_00",
+      "framework": "GDPR",
+      "article_number": "Article 28",
+      "title": "Processor",
+      "description": "1. Where processing is to be carried out on behalf of a controller , the controller shall use only processors providing",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART28_01",
+      "framework": "GDPR",
+      "article_number": "Article 28.1",
+      "title": "Processor - Paragraph 1",
+      "description": "Where processing is to be carried out on behalf of a controller , the controller shall use only processors providing",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Processing",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART29_00",
+      "framework": "GDPR",
+      "article_number": "Article 29",
+      "title": "Processing under the author ity of the controller or processor",
+      "description": "The processor and any person acting under the author ity of the controller or of the processor , who has access to",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART30_00",
+      "framework": "GDPR",
+      "article_number": "Article 30",
+      "title": "Records of processing activities",
+      "description": "1. Each controller and, where applicable, the controller's representative, shall maintain a record of processing",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART30_01",
+      "framework": "GDPR",
+      "article_number": "Article 30.1",
+      "title": "Records of processing activities - Paragraph 1",
+      "description": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Processing",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART31_00",
+      "framework": "GDPR",
+      "article_number": "Article 31",
+      "title": "Cooperation with the super visor y author ity",
+      "description": "The controller and the processor and, where applicable, their representatives, shall cooperate , on request, with the",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART32_00",
+      "framework": "GDPR",
+      "article_number": "Article 32",
+      "title": "Secur ity of processing",
+      "description": "1. Taking into account the state of the art, the costs of implemen tation and the nature, scope, cont ext and purposes",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Security",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART32_01",
+      "framework": "GDPR",
+      "article_number": "Article 32.1",
+      "title": "Secur ity of processing - Paragraph 1",
+      "description": "Taking into account the state of the art, the costs of implemen tation and the nature, scope, cont ext and purposes",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Security",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART33_00",
+      "framework": "GDPR",
+      "article_number": "Article 33",
+      "title": "Notif ication of a personal data breach to the super visor y author ity",
+      "description": "1. In the case of a personal data breach, the controller shall without undue dela y and, where feasible, not later than",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Breach Notification",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "breach",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART33_01",
+      "framework": "GDPR",
+      "article_number": "Article 33.1",
+      "title": "Notif ication of a personal data breach to the super visor y author ity - Paragraph 1",
+      "description": "In the case of a personal data breach, the controller shall without undue dela y and, where feasible, not later than",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Breach Notification",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "breach",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART34_00",
+      "framework": "GDPR",
+      "article_number": "Article 34",
+      "title": "Communication of a personal data breach to the data subject",
+      "description": "1. When the personal data breac h is likely to result in a high risk to the rights and freedoms of natural persons, the",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Breach Notification",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "breach",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART34_01",
+      "framework": "GDPR",
+      "article_number": "Article 34.1",
+      "title": "Communication of a personal data breach to the data subject - Paragraph 1",
+      "description": "When the personal data breac h is likely to result in a high risk to the rights and freedoms of natural persons, the",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Breach Notification",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "breach",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART35_00",
+      "framework": "GDPR",
+      "article_number": "Article 35",
+      "title": "Data protection impact assessment",
+      "description": "1. Where a type of processing in particular using new technologies, and taking into account the nature, scope,",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Security",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "security",
+        "impact_assessment"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART35_01",
+      "framework": "GDPR",
+      "article_number": "Article 35.1",
+      "title": "Data protection impact assessment - Paragraph 1",
+      "description": "Where a type of processing in particular using new technologies, and taking into account the nature, scope,",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Security",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "security",
+        "impact_assessment"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART36_00",
+      "framework": "GDPR",
+      "article_number": "Article 36",
+      "title": "Prior consulta tion",
+      "description": "1. The controller shall consult the super visor y author ity prior to processing where a data prot ection impact",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART36_01",
+      "framework": "GDPR",
+      "article_number": "Article 36.1",
+      "title": "Prior consulta tion - Paragraph 1",
+      "description": "The controller shall consult the super visor y author ity prior to processing where a data prot ection impact",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART37_00",
+      "framework": "GDPR",
+      "article_number": "Article 37",
+      "title": "Designation of the data protection officer",
+      "description": "1. The controller and the processor shall designat e a data prot ection office r in any case where:",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "security",
+        "processor",
+        "dpo"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART37_01",
+      "framework": "GDPR",
+      "article_number": "Article 37.1",
+      "title": "Designation of the data protection officer - Paragraph 1",
+      "description": "The controller and the processor shall designat e a data prot ection office r in any case where:",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "security",
+        "processor",
+        "dpo"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART38_00",
+      "framework": "GDPR",
+      "article_number": "Article 38",
+      "title": "Position of the data protection officer",
+      "description": "1. The controller and the processor shall ensure that the data prot ection officer is involved, properly and in a timely",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "security",
+        "processor",
+        "dpo"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART38_01",
+      "framework": "GDPR",
+      "article_number": "Article 38.1",
+      "title": "Position of the data protection officer - Paragraph 1",
+      "description": "The controller and the processor shall ensure that the data prot ection officer is involved, properly and in a timely",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "security",
+        "processor",
+        "dpo"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART39_00",
+      "framework": "GDPR",
+      "article_number": "Article 39",
+      "title": "Tasks of the data protection officer",
+      "description": "1. The data protection officer shall have at least the following tasks:",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "security",
+        "dpo"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART39_01",
+      "framework": "GDPR",
+      "article_number": "Article 39.1",
+      "title": "Tasks of the data protection officer - Paragraph 1",
+      "description": "The data protection officer shall have at least the following tasks:",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "security",
+        "dpo"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART40_00",
+      "framework": "GDPR",
+      "article_number": "Article 40",
+      "title": "Codes of conduct",
+      "description": "1. The Member States, the super visor y author ities, the Board and the Commission shall encourage the drawing up of",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART40_01",
+      "framework": "GDPR",
+      "article_number": "Article 40.1",
+      "title": "Codes of conduct - Paragraph 1",
+      "description": "The Member States, the super visor y author ities, the Board and the Commission shall encourage the drawing up of",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART41_00",
+      "framework": "GDPR",
+      "article_number": "Article 41",
+      "title": "Monito ring of appro ved codes of conduct",
+      "description": "1. Without prejudice to the tasks and powers of the compet ent super visor y author ity under Articles 57 and 58, the",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART41_01",
+      "framework": "GDPR",
+      "article_number": "Article 41.1",
+      "title": "Monito ring of appro ved codes of conduct - Paragraph 1",
+      "description": "Without prejudice to the tasks and powers of the compet ent super visor y author ity under Articles 57 and 58, the",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART42_00",
+      "framework": "GDPR",
+      "article_number": "Article 42",
+      "title": "Cer tification",
+      "description": "1. The Member State s, the super visor y author ities, the Board and the Commission shall encourag e, in particular at",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART42_01",
+      "framework": "GDPR",
+      "article_number": "Article 42.1",
+      "title": "Cer tification - Paragraph 1",
+      "description": "The Member State s, the super visor y author ities, the Board and the Commission shall encourag e, in particular at",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART43_00",
+      "framework": "GDPR",
+      "article_number": "Article 43",
+      "title": "Cer tification bodies",
+      "description": "1. Without prejudice to the task s and powers of the compe tent super visor y author ity under Articles 57 and 58,",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART43_01",
+      "framework": "GDPR",
+      "article_number": "Article 43.1",
+      "title": "Cer tification bodies - Paragraph 1",
+      "description": "Without prejudice to the task s and powers of the compe tent super visor y author ity under Articles 57 and 58,",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART44_00",
+      "framework": "GDPR",
+      "article_number": "Article 44",
+      "title": "General principle for transfer s",
+      "description": "Any transfer of personal data which are undergoing processing or are intended for processing after transfer to a third",
+      "is_mandatory": true,
+      "risk_level": "Critical",
+      "clause_type": "Data Transfer",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing",
+        "transfer"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART45_00",
+      "framework": "GDPR",
+      "article_number": "Article 45",
+      "title": "Transfers on the basis of an adequacy decision",
+      "description": "1. A transfer of personal data to a third countr y or an international organisation may take place where the",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Transfer",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "transfer"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART45_01",
+      "framework": "GDPR",
+      "article_number": "Article 45.1",
+      "title": "Transfers on the basis of an adequacy decision - Paragraph 1",
+      "description": "A transfer of personal data to a third countr y or an international organisation may take place where the",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Transfer",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "transfer"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART46_00",
+      "framework": "GDPR",
+      "article_number": "Article 46",
+      "title": "Transfers subject to appropr iate safeguards",
+      "description": "1. In the absence of a decision pursuant to",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Transfer",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "transfer"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART46_01",
+      "framework": "GDPR",
+      "article_number": "Article 46.1",
+      "title": "Transfers subject to appropr iate safeguards - Paragraph 1",
+      "description": "In the absence of a decision pursuant to",
+      "is_mandatory": true,
+      "risk_level": "High",
+      "clause_type": "Data Transfer",
+      "verification_method": "Document Review",
+      "tags": [
+        "transfer"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART47_00",
+      "framework": "GDPR",
+      "article_number": "Article 47",
+      "title": "Binding corporate rules",
+      "description": "1. The compe tent super visor y author ity shall appro ve binding corporat e rules in accordance with the consistency",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART47_01",
+      "framework": "GDPR",
+      "article_number": "Article 47.1",
+      "title": "Binding corporate rules - Paragraph 1",
+      "description": "The compe tent super visor y author ity shall appro ve binding corporat e rules in accordance with the consistency",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART48_00",
+      "framework": "GDPR",
+      "article_number": "Article 48",
+      "title": "Transfers or disclosures not author ised by Union law",
+      "description": "Any judgment of a cour t or tribunal and any decision of an administrative author ity of a third countr y requir ing a",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "transfer"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART49_00",
+      "framework": "GDPR",
+      "article_number": "Article 49",
+      "title": "Derogations for specif ic situations",
+      "description": "1. In the absence of an adequacy decision pursuant to",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART49_01",
+      "framework": "GDPR",
+      "article_number": "Article 49.1",
+      "title": "Derogations for specif ic situations - Paragraph 1",
+      "description": "In the absence of an adequacy decision pursuant to",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART50_00",
+      "framework": "GDPR",
+      "article_number": "Article 50",
+      "title": "Inter national cooperation for the protection of personal data",
+      "description": "In relation to third countr ies and internatio nal organisations, the Commission and super visor y author ities shall take",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART51_00",
+      "framework": "GDPR",
+      "article_number": "Article 51",
+      "title": "Super visor y author ity",
+      "description": "1. Each Member State shall provide for one or more independent public author ities to be responsible for monitori ng",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART51_01",
+      "framework": "GDPR",
+      "article_number": "Article 51.1",
+      "title": "Super visor y author ity - Paragraph 1",
+      "description": "Each Member State shall provide for one or more independent public author ities to be responsible for monitori ng",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART52_00",
+      "framework": "GDPR",
+      "article_number": "Article 52",
+      "title": "Independence",
+      "description": "1. Each super visor y author ity shall act with compl ete independence in performin g its tasks and exercising its powers",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART52_01",
+      "framework": "GDPR",
+      "article_number": "Article 52.1",
+      "title": "Independence - Paragraph 1",
+      "description": "Each super visor y author ity shall act with compl ete independence in performin g its tasks and exercising its powers",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART53_00",
+      "framework": "GDPR",
+      "article_number": "Article 53",
+      "title": "General conditions for the members of the super visor y author ity",
+      "description": "1. Member States shall provide for each member of their super visor y author ities to be appoint ed by means of a",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART53_01",
+      "framework": "GDPR",
+      "article_number": "Article 53.1",
+      "title": "General conditions for the members of the super visor y author ity - Paragraph 1",
+      "description": "Member States shall provide for each member of their super visor y author ities to be appoint ed by means of a",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART54_00",
+      "framework": "GDPR",
+      "article_number": "Article 54",
+      "title": "Rules on the establishment of the super visor y author ity",
+      "description": "1. Each Member State shall provide by law for all of the following:",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART54_01",
+      "framework": "GDPR",
+      "article_number": "Article 54.1",
+      "title": "Rules on the establishment of the super visor y author ity - Paragraph 1",
+      "description": "Each Member State shall provide by law for all of the following:",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART55_00",
+      "framework": "GDPR",
+      "article_number": "Article 55",
+      "title": "Competence",
+      "description": "1. Each super visor y author ity shall be compet ent for the perf ormance of the tasks assigned to and the exercise of the",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART55_01",
+      "framework": "GDPR",
+      "article_number": "Article 55.1",
+      "title": "Competence - Paragraph 1",
+      "description": "Each super visor y author ity shall be compet ent for the perf ormance of the tasks assigned to and the exercise of the",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART56_00",
+      "framework": "GDPR",
+      "article_number": "Article 56",
+      "title": "Competence of the lead super visor y author ity",
+      "description": "1. Without prejudice to",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART57_00",
+      "framework": "GDPR",
+      "article_number": "Article 57",
+      "title": "Tasks",
+      "description": "1. Without prejudice to other tasks set out under this Regulation, each super visor y author ity shall on its territory :",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART57_01",
+      "framework": "GDPR",
+      "article_number": "Article 57.1",
+      "title": "Tasks - Paragraph 1",
+      "description": "Without prejudice to other tasks set out under this Regulation, each super visor y author ity shall on its territory :",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART41_00",
+      "framework": "GDPR",
+      "article_number": "Article 41",
+      "title": "and of a certification body pursuant to Article 43;",
+      "description": "(q) conduct the accreditation of a body for monitori ng codes of conduct pursuant to",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART58_00",
+      "framework": "GDPR",
+      "article_number": "Article 58",
+      "title": "Powers",
+      "description": "1. Each super visor y author ity shall have all of the following inve stigative powers:",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART58_01",
+      "framework": "GDPR",
+      "article_number": "Article 58.1",
+      "title": "Powers - Paragraph 1",
+      "description": "Each super visor y author ity shall have all of the following inve stigative powers:",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART59_00",
+      "framework": "GDPR",
+      "article_number": "Article 59",
+      "title": "Acti vity repor ts",
+      "description": "Each super visor y author ity shall draw up an annual repor t on its activities, which may include a list of types of",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART60_00",
+      "framework": "GDPR",
+      "article_number": "Article 60",
+      "title": "Cooperation betw een the lead super visor y author ity and the other super visor y author ities",
+      "description": "concer ned",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART61_00",
+      "framework": "GDPR",
+      "article_number": "Article 61",
+      "title": "Mutual assist ance",
+      "description": "1. Super visor y author ities shall provide each other with relevant information and mutual assistance in order to",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART61_01",
+      "framework": "GDPR",
+      "article_number": "Article 61.1",
+      "title": "Mutual assist ance - Paragraph 1",
+      "description": "Super visor y author ities shall provide each other with relevant information and mutual assistance in order to",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART62_00",
+      "framework": "GDPR",
+      "article_number": "Article 62",
+      "title": "Joint operations of super visor y author ities",
+      "description": "1. The super visor y author ities shall, where appropr iate, conduct joint operations including joint investig ations and",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART62_01",
+      "framework": "GDPR",
+      "article_number": "Article 62.1",
+      "title": "Joint operations of super visor y author ities - Paragraph 1",
+      "description": "The super visor y author ities shall, where appropr iate, conduct joint operations including joint investig ations and",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART63_00",
+      "framework": "GDPR",
+      "article_number": "Article 63",
+      "title": "Consist ency mechanism",
+      "description": "In order to contr ibute to the consiste nt application of this Regulation throughout the Union, the super visor y author ities",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART64_00",
+      "framework": "GDPR",
+      "article_number": "Article 64",
+      "title": "Opinion of the Board",
+      "description": "1. The Board shall issue an opinion where a compet ent super visor y author ity intends to adopt any of the measures",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART64_01",
+      "framework": "GDPR",
+      "article_number": "Article 64.1",
+      "title": "Opinion of the Board - Paragraph 1",
+      "description": "The Board shall issue an opinion where a compet ent super visor y author ity intends to adopt any of the measures",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART65_00",
+      "framework": "GDPR",
+      "article_number": "Article 65",
+      "title": "Dispute resolution by the Board",
+      "description": "1. In order to ensure the correct and consistent application of this Regulation in individual cases, the Board shall",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART65_01",
+      "framework": "GDPR",
+      "article_number": "Article 65.1",
+      "title": "Dispute resolution by the Board - Paragraph 1",
+      "description": "In order to ensure the correct and consistent application of this Regulation in individual cases, the Board shall",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART66_00",
+      "framework": "GDPR",
+      "article_number": "Article 66",
+      "title": "Urgency procedure",
+      "description": "1. In excep tional circumstances, where a super visor y author ity concer ned considers that there is an urgent need to",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART66_01",
+      "framework": "GDPR",
+      "article_number": "Article 66.1",
+      "title": "Urgency procedure - Paragraph 1",
+      "description": "In excep tional circumstances, where a super visor y author ity concer ned considers that there is an urgent need to",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART67_00",
+      "framework": "GDPR",
+      "article_number": "Article 67",
+      "title": "Exchange of information",
+      "description": "The Commission may adopt imple menting acts of general scope in order to specify the arrang ements for the exchange",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART68_00",
+      "framework": "GDPR",
+      "article_number": "Article 68",
+      "title": "European Data Protection Board",
+      "description": "1. The European Data Protection Board (the ‘Board’) is hereby established as a body of the Union and shall have legal",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART68_01",
+      "framework": "GDPR",
+      "article_number": "Article 68.1",
+      "title": "European Data Protection Board - Paragraph 1",
+      "description": "The European Data Protection Board (the ‘Board’) is hereby established as a body of the Union and shall have legal",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART69_00",
+      "framework": "GDPR",
+      "article_number": "Article 69",
+      "title": "Independence",
+      "description": "1. The Board shall act independently when performin g its tasks or exer cising its powers pursuant to Articles 70",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART69_01",
+      "framework": "GDPR",
+      "article_number": "Article 69.1",
+      "title": "Independence - Paragraph 1",
+      "description": "The Board shall act independently when performin g its tasks or exer cising its powers pursuant to Articles 70",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART70_00",
+      "framework": "GDPR",
+      "article_number": "Article 70",
+      "title": "Tasks of the Board",
+      "description": "1. The Board shall ensure the consistent application of this Regulation. To that end, the Board shall, on its own",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART70_01",
+      "framework": "GDPR",
+      "article_number": "Article 70.1",
+      "title": "Tasks of the Board - Paragraph 1",
+      "description": "The Board shall ensure the consistent application of this Regulation. To that end, the Board shall, on its own",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART71_00",
+      "framework": "GDPR",
+      "article_number": "Article 71",
+      "title": "Repor ts",
+      "description": "1. The Board shall draw up an annual repor t regarding the prot ection of natural persons with regar d to processing in",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART71_01",
+      "framework": "GDPR",
+      "article_number": "Article 71.1",
+      "title": "Repor ts - Paragraph 1",
+      "description": "The Board shall draw up an annual repor t regarding the prot ection of natural persons with regar d to processing in",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART72_00",
+      "framework": "GDPR",
+      "article_number": "Article 72",
+      "title": "Procedure",
+      "description": "1. The Board shall take decisions by a simple majority of its members, unless other wise provided for in this",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART72_01",
+      "framework": "GDPR",
+      "article_number": "Article 72.1",
+      "title": "Procedure - Paragraph 1",
+      "description": "The Board shall take decisions by a simple majority of its members, unless other wise provided for in this",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART73_00",
+      "framework": "GDPR",
+      "article_number": "Article 73",
+      "title": "Chair",
+      "description": "1. The Board shall elect a chair and two deputy chairs from amongst its members by simple majority.",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART73_01",
+      "framework": "GDPR",
+      "article_number": "Article 73.1",
+      "title": "Chair - Paragraph 1",
+      "description": "The Board shall elect a chair and two deputy chairs from amongst its members by simple majority.",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART74_00",
+      "framework": "GDPR",
+      "article_number": "Article 74",
+      "title": "Tasks of the Chair",
+      "description": "1. The Chair shall have the following tasks:",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART74_01",
+      "framework": "GDPR",
+      "article_number": "Article 74.1",
+      "title": "Tasks of the Chair - Paragraph 1",
+      "description": "The Chair shall have the following tasks:",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART75_00",
+      "framework": "GDPR",
+      "article_number": "Article 75",
+      "title": "Secreta riat",
+      "description": "1. The Board shall have a secretar iat, whic h shall be provided by the European Data Protection Super visor .",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART75_01",
+      "framework": "GDPR",
+      "article_number": "Article 75.1",
+      "title": "Secreta riat - Paragraph 1",
+      "description": "The Board shall have a secretar iat, whic h shall be provided by the European Data Protection Super visor .",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART76_00",
+      "framework": "GDPR",
+      "article_number": "Article 76",
+      "title": "Conf identiality",
+      "description": "1. The discussions of the Board shall be confidential where the Board deems it necessar y, as provided for in its rules",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART76_01",
+      "framework": "GDPR",
+      "article_number": "Article 76.1",
+      "title": "Conf identiality - Paragraph 1",
+      "description": "The discussions of the Board shall be confidential where the Board deems it necessar y, as provided for in its rules",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART77_00",
+      "framework": "GDPR",
+      "article_number": "Article 77",
+      "title": "Right to lodge a complaint with a super visor y author ity",
+      "description": "1. Without prejudice to any other administrative or judicial remedy , ever y data subject shall have the right to lodge a",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART77_01",
+      "framework": "GDPR",
+      "article_number": "Article 77.1",
+      "title": "Right to lodge a complaint with a super visor y author ity - Paragraph 1",
+      "description": "Without prejudice to any other administrative or judicial remedy , ever y data subject shall have the right to lodge a",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART78_00",
+      "framework": "GDPR",
+      "article_number": "Article 78",
+      "title": "Right to an effectiv e judicial remedy against a super visor y author ity",
+      "description": "1. Without prejudice to any other administrative or non-judicial remedy , each natural or legal person shall have the",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART78_01",
+      "framework": "GDPR",
+      "article_number": "Article 78.1",
+      "title": "Right to an effectiv e judicial remedy against a super visor y author ity - Paragraph 1",
+      "description": "Without prejudice to any other administrative or non-judicial remedy , each natural or legal person shall have the",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART79_00",
+      "framework": "GDPR",
+      "article_number": "Article 79",
+      "title": "Right to an effectiv e judicial remedy against a controller or processor",
+      "description": "1. Without prejudice to any available administrative or non-judicial remedy , including the right to lodg e a compl aint",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART79_01",
+      "framework": "GDPR",
+      "article_number": "Article 79.1",
+      "title": "Right to an effectiv e judicial remedy against a controller or processor - Paragraph 1",
+      "description": "Without prejudice to any available administrative or non-judicial remedy , including the right to lodg e a compl aint",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "processing",
+        "rights",
+        "processor"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART80_00",
+      "framework": "GDPR",
+      "article_number": "Article 80",
+      "title": "Represent ation of data subjects",
+      "description": "1. The data subject shall have the right to mandate a not-f or-profit body , organisation or association whic h has been",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART80_01",
+      "framework": "GDPR",
+      "article_number": "Article 80.1",
+      "title": "Represent ation of data subjects - Paragraph 1",
+      "description": "The data subject shall have the right to mandate a not-f or-profit body , organisation or association whic h has been",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART81_00",
+      "framework": "GDPR",
+      "article_number": "Article 81",
+      "title": "Suspension of proceedings",
+      "description": "1. Where a compet ent cour t of a Member State has information on proceedings, concer ning the same subject matt er",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART81_01",
+      "framework": "GDPR",
+      "article_number": "Article 81.1",
+      "title": "Suspension of proceedings - Paragraph 1",
+      "description": "Where a compet ent cour t of a Member State has information on proceedings, concer ning the same subject matt er",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART82_00",
+      "framework": "GDPR",
+      "article_number": "Article 82",
+      "title": "Right to compensation and liability",
+      "description": "1. Any person who has suffered mater ial or non-material damage as a result of an infringement of this Regulation",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART82_01",
+      "framework": "GDPR",
+      "article_number": "Article 82.1",
+      "title": "Right to compensation and liability - Paragraph 1",
+      "description": "Any person who has suffered mater ial or non-material damage as a result of an infringement of this Regulation",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Data Subject Rights",
+      "verification_method": "Document Review",
+      "tags": [
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART83_00",
+      "framework": "GDPR",
+      "article_number": "Article 83",
+      "title": "General conditions for imposing administrativ e fines",
+      "description": "1. Each super visor y author ity shall ensure that the imposition of administrative fines pursuant to this Article in",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART83_01",
+      "framework": "GDPR",
+      "article_number": "Article 83.1",
+      "title": "General conditions for imposing administrativ e fines - Paragraph 1",
+      "description": "Each super visor y author ity shall ensure that the imposition of administrative fines pursuant to this Article in",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART84_00",
+      "framework": "GDPR",
+      "article_number": "Article 84",
+      "title": "Penalties",
+      "description": "1. Member States shall lay down the rules on other penalties applicable to infringements of this Regulation in",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART84_01",
+      "framework": "GDPR",
+      "article_number": "Article 84.1",
+      "title": "Penalties - Paragraph 1",
+      "description": "Member States shall lay down the rules on other penalties applicable to infringements of this Regulation in",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART85_00",
+      "framework": "GDPR",
+      "article_number": "Article 85",
+      "title": "Processing and freedom of expression and information",
+      "description": "1. Member State s shall by law reconcile the right to the prot ection of personal data pursuant to this Regulation with",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART85_01",
+      "framework": "GDPR",
+      "article_number": "Article 85.1",
+      "title": "Processing and freedom of expression and information - Paragraph 1",
+      "description": "Member State s shall by law reconcile the right to the prot ection of personal data pursuant to this Regulation with",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review",
+      "tags": [
+        "personal_data",
+        "processing",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART86_00",
+      "framework": "GDPR",
+      "article_number": "Article 86",
+      "title": "Processing and public access to official documents",
+      "description": "Personal data in official documents held by a public author ity or a public body or a private body for the performa nce of",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "processing",
+        "rights"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART87_00",
+      "framework": "GDPR",
+      "article_number": "Article 87",
+      "title": "Processing of the national identif ication number",
+      "description": "Member States may further determine the specifi c conditions for the processing of a national identif ication number or",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART88_00",
+      "framework": "GDPR",
+      "article_number": "Article 88",
+      "title": "Processing in the context of emplo yment",
+      "description": "1. Member States may, by law or by collective agreements, provide for more specific rules to ensure the prot ection of",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "consent",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART88_01",
+      "framework": "GDPR",
+      "article_number": "Article 88.1",
+      "title": "Processing in the context of emplo yment - Paragraph 1",
+      "description": "Member States may, by law or by collective agreements, provide for more specific rules to ensure the prot ection of",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review",
+      "tags": [
+        "consent",
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART89_00",
+      "framework": "GDPR",
+      "article_number": "Article 89",
+      "title": "Safeguards and derogations relating to processing for archiving pur poses in the public interest,",
+      "description": "scientif ic or histor ical research pur poses or statist ical pur poses",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "Processing",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART90_00",
+      "framework": "GDPR",
+      "article_number": "Article 90",
+      "title": "Obligations of secrecy",
+      "description": "1. Member State s may adopt specific rules to set out the powers of the super visor y author ities laid down in points (e)",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART90_01",
+      "framework": "GDPR",
+      "article_number": "Article 90.1",
+      "title": "Obligations of secrecy - Paragraph 1",
+      "description": "Member State s may adopt specific rules to set out the powers of the super visor y author ities laid down in points (e)",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART91_00",
+      "framework": "GDPR",
+      "article_number": "Article 91",
+      "title": "Exis ting data protection rules of churches and religious associations",
+      "description": "1. Where in a Member State, churches and religious associations or communities apply , at the time of entr y into",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART91_01",
+      "framework": "GDPR",
+      "article_number": "Article 91.1",
+      "title": "Exis ting data protection rules of churches and religious associations - Paragraph 1",
+      "description": "Where in a Member State, churches and religious associations or communities apply , at the time of entr y into",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART92_00",
+      "framework": "GDPR",
+      "article_number": "Article 92",
+      "title": "Exercise of the delegation",
+      "description": "1. The power to adop t delegat ed acts is confe rred on the Commission subject to the conditions laid down in this",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART92_01",
+      "framework": "GDPR",
+      "article_number": "Article 92.1",
+      "title": "Exercise of the delegation - Paragraph 1",
+      "description": "The power to adop t delegat ed acts is confe rred on the Commission subject to the conditions laid down in this",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART93_00",
+      "framework": "GDPR",
+      "article_number": "Article 93",
+      "title": "Committee procedure",
+      "description": "1. The Commission shall be assisted by a committee. That committee shall be a committee within the meaning of",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART93_01",
+      "framework": "GDPR",
+      "article_number": "Article 93.1",
+      "title": "Committee procedure - Paragraph 1",
+      "description": "The Commission shall be assisted by a committee. That committee shall be a committee within the meaning of",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART94_00",
+      "framework": "GDPR",
+      "article_number": "Article 94",
+      "title": "Repeal of Directiv e 95/46/EC",
+      "description": "1. Directive 95/46/EC is repealed with effect from 25 May 2018.",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART94_01",
+      "framework": "GDPR",
+      "article_number": "Article 94.1",
+      "title": "Repeal of Directiv e 95/46/EC - Paragraph 1",
+      "description": "Directive 95/46/EC is repealed with effect from 25 May",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART95_00",
+      "framework": "GDPR",
+      "article_number": "Article 95",
+      "title": "Relationship with Directiv e 2002/58/EC",
+      "description": "This Regulation shall not impose additional oblig ations on natural or legal persons in relation to processing in",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "processing"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART96_00",
+      "framework": "GDPR",
+      "article_number": "Article 96",
+      "title": "Relationship with previously concluded Agreements",
+      "description": "International agreements involving the transfe r of personal data to third countr ies or internati onal organisations whic h",
+      "is_mandatory": false,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "personal_data",
+        "consent"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART97_00",
+      "framework": "GDPR",
+      "article_number": "Article 97",
+      "title": "Commission repor ts",
+      "description": "1. By 25 May 2020 and ever y four years thereaf ter, the Commission shall submit a repor t on the evaluation and",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART97_01",
+      "framework": "GDPR",
+      "article_number": "Article 97.1",
+      "title": "Commission repor ts - Paragraph 1",
+      "description": "By 25 May 2020 and ever y four years thereaf ter, the Commission shall submit a repor t on the evaluation and",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART98_00",
+      "framework": "GDPR",
+      "article_number": "Article 98",
+      "title": "Review of other Union legal acts on data protection",
+      "description": "The Commission shall, if appropr iate, submit legislative proposals with a view to amending other Union legal acts on",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "requirement_id": "GDPR_ART99_00",
+      "framework": "GDPR",
+      "article_number": "Article 99",
+      "title": "Entr y into force and application",
+      "description": "1. This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review, System Audit",
+      "tags": []
+    },
+    {
+      "requirement_id": "GDPR_ART99_01",
+      "framework": "GDPR",
+      "article_number": "Article 99.1",
+      "title": "Entr y into force and application - Paragraph 1",
+      "description": "This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of",
+      "is_mandatory": true,
+      "risk_level": "Medium",
+      "clause_type": "General",
+      "verification_method": "Document Review",
+      "tags": []
+    }
+  ]
+}
