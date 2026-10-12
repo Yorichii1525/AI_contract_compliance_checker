@@ -1,61 +1,47 @@
-# Web Framework
+# Streamlit UI and FastAPI backend
 streamlit==1.29.0
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
 
-# Data Processing
+# Data processing and dashboard charts
 pandas==2.1.4
 numpy==1.26.2
-
-# Visualization
 plotly==5.18.0
 
-# PDF Processing
+# PDF, DOCX, and image/OCR processing
 PyPDF2==3.0.1
 pdfplumber==0.10.3
 python-docx==1.1.0
-
-# OCR
 pytesseract==0.3.10
 opencv-python==4.8.1.78
 Pillow==10.1.0
 
-# NLP and ML
+# NLP and local transformer models
 transformers==4.36.2
 sentence-transformers>=2.7.0
-scikit-learn==1.3.2
 spacy>=3.7.0
-
-# LLM Integration
-accelerate==0.25.0
-bitsandbytes==0.41.3
-openai>=1.0.0
 torch==2.2.2
 
-# Google Sheets Integration
+# OpenAI and Groq integrations
+openai>=1.0.0
+groq>=0.33.0
+
+# Google Sheets integration
 google-auth==2.25.2
 google-auth-oauthlib==1.2.0
 google-auth-httplib2==0.2.0
 google-api-python-client==2.111.0
 
-# Report Generation
+# PDF report generation and charts
 reportlab==4.0.7
-fpdf2==2.7.6
 matplotlib>=3.8.0
 seaborn>=0.13.0
 
-# Utilities
+# Configuration, HTTP requests, email, and Slack
 python-dotenv==1.0.0
 pydantic==2.5.3
 tqdm==4.66.1
-
-# Email Services
 sendgrid>=6.11.0
-mailgun>=0.1.1
-
-# Multi-Platform Integration
-groq>=0.33.0
 requests>=2.32.0
 slack-sdk>=3.27.0
-
-# Testing (optional)
-pytest==7.4.3
- 
