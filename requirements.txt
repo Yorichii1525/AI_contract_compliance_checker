@@ -1,47 +1,61 @@
-# Streamlit UI and FastAPI backend
-streamlit==1.29.0
+# =============================================================================
+# Core Web App & API
+# =============================================================================
+streamlit>=1.35.0
 fastapi>=0.104.0
 uvicorn[standard]>=0.24.0
 python-multipart>=0.0.6
 
-# Data processing and dashboard charts
-pandas==2.1.4
-numpy==1.26.2
-plotly==5.18.0
-
-# PDF, DOCX, and image/OCR processing
-PyPDF2==3.0.1
-pdfplumber==0.10.3
-python-docx==1.1.0
-pytesseract==0.3.10
-opencv-python==4.8.1.78
-Pillow==10.1.0
-
-# NLP and local transformer models
-transformers==4.36.2
-sentence-transformers>=2.7.0
-spacy>=3.7.0
-torch==2.2.2
-
-# OpenAI and Groq integrations
-openai>=1.0.0
-groq>=0.33.0
-
-# Google Sheets integration
-google-auth==2.25.2
-google-auth-oauthlib==1.2.0
-google-auth-httplib2==0.2.0
-google-api-python-client==2.111.0
-
-# PDF report generation and charts
-reportlab==4.0.7
+# =============================================================================
+# Data Analysis & Visualizations
+# =============================================================================
+pandas>=2.0.0
+numpy>=1.26.0,<3.0.0
+plotly>=5.18.0
 matplotlib>=3.8.0
 seaborn>=0.13.0
 
-# Configuration, HTTP requests, email, and Slack
-python-dotenv==1.0.0
-pydantic==2.5.3
-tqdm==4.66.1
-sendgrid>=6.11.0
-requests>=2.32.0
+# =============================================================================
+# Document & PDF / Word Processing
+# =============================================================================
+pypdf>=3.17.0
+PyPDF2>=3.0.0
+pdfplumber>=0.10.0
+python-docx>=1.1.0
+Pillow>=10.0.0
+opencv-python-headless>=4.8.0
+pytesseract>=0.3.10
+reportlab>=4.0.0
+
+# =============================================================================
+# NLP & Machine Learning (CPU compatible)
+# =============================================================================
+torch>=2.2.0
+torchvision>=0.17.0
+transformers>=4.38.0
+sentence-transformers>=2.7.0
+spacy>=3.7.0
+
+# =============================================================================
+# LLM Providers (OpenAI & Groq)
+# =============================================================================
+openai>=1.12.0
+groq>=0.4.0
+
+# =============================================================================
+# Integrations & Utilities
+# =============================================================================
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+requests>=2.31.0
+tqdm>=4.66.0
 slack-sdk>=3.27.0
+sendgrid>=6.11.0
+
+# =============================================================================
+# Google Sheets Integration
+# =============================================================================
+google-auth>=2.25.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+google-api-python-client>=2.111.0

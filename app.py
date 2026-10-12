@@ -10,6 +10,9 @@ import io
 import time
 import tempfile
 import os
+import hashlib
+import re
+import zipfile
 from pathlib import Path
 
 # Import services
@@ -19,6 +22,13 @@ from services.google_sheets_service import GoogleSheetsError
 from services.document_viewer import DocumentViewer
 from services.document_updater import DocumentUpdater, MissingClauseGeneration
 from utils.logger import get_logger
+from utils.api_client import (
+    analyze_processed_document,
+    document_from_api,
+    result_from_api,
+    upload_contract,
+    upload_contract_text,
+)
 
 # Initialize logger
 logger = get_logger(__name__)
@@ -133,33 +143,6 @@ st.markdown("""
 
 # Initialize services with caching
 @st.cache_resource
-def get_document_processor():
-    """Initialize and cache document processor."""
-    logger.info("Initializing DocumentProcessor...")
-    return DocumentProcessor()
-
-@st.cache_resource
-def get_nlp_analyzer():
-    """Initialize and cache NLP analyzer."""
-    logger.info("Initializing NLPAnalyzer...")
-    from services.nlp_analyzer import NLPAnalyzer
-    return NLPAnalyzer()
-
-@st.cache_resource
-def get_compliance_checker():
-    """Initialize and cache compliance checker."""
-    logger.info("Initializing ComplianceChecker...")
-    from services.compliance_checker import ComplianceChecker
-    return ComplianceChecker()
-
-@st.cache_resource
-def get_recommendation_engine():
-    """Initialize and cache recommendation engine."""
-    logger.info("Initializing RecommendationEngine...")
-    from services.recommendation_engine import RecommendationEngine
-    return RecommendationEngine(use_llama=False)  # Set to True when LLaMA is available
-
-@st.cache_resource
 def get_export_service():
     """Initialize and cache export service."""
     logger.info("Initializing ExportService...")
@@ -210,6 +193,10 @@ if 'batch_summary' not in st.session_state:
     st.session_state.batch_summary = None
 if 'autofix_render_counter' not in st.session_state:
     st.session_state.autofix_render_counter = 0
+if 'uploaded_file_signature' not in st.session_state:
+    st.session_state.uploaded_file_signature = None
+if 'api_document_id' not in st.session_state:
+    st.session_state.api_document_id = None
 
 # Header
 st.markdown('<h1 class="main-header">⚖️ AI-Powered Regulatory Compliance Checker</h1>', unsafe_allow_html=True)
@@ -878,7 +865,13 @@ def _display_autofix_section(display_report, document_name, processed_doc=None):
                         
                         # Offer download
                         file_extension = "docx" if output_format == "docx" else "txt"
-                        filename = f"contract_rewritten_{datetime.now().strftime('%Y%m%d_%H%M%S')}.{file_extension}"
+                        safe_contract_name = re.sub(
+                            r"[^A-Za-z0-9_-]+", "_", Path(document_name).stem
+                        ).strip("_") or "contract"
+                        filename = (
+                            f"{safe_contract_name}_rewritten_"
+                            f"{datetime.now().strftime('%Y%m%d_%H%M%S')}.{file_extension}"
+                        )
                         
                         st.download_button(
                             label=f"⬇️ Download Rewritten Contract (.{file_extension})",
@@ -979,20 +972,28 @@ with tab1:
                     # Process document immediately
                     with st.spinner("Processing document..."):
                         try:
-                            # Save uploaded file to temporary location
-                            with tempfile.NamedTemporaryFile(delete=False, suffix=Path(uploaded_file.name).suffix) as tmp_file:
-                                tmp_file.write(uploaded_file.getvalue())
-                                tmp_path = tmp_file.name
-                            
-                            # Process document
-                            doc_processor = get_document_processor()
-                            processed_doc = doc_processor.process_document(tmp_path)
+                            # Delegate document processing to the FastAPI backend.
+                            file_content = uploaded_file.getvalue()
+                            file_signature = hashlib.sha256(
+                                uploaded_file.name.encode("utf-8") + file_content
+                            ).hexdigest()
+                            if st.session_state.uploaded_file_signature == file_signature:
+                                processed_doc = st.session_state.processed_document
+                            else:
+                                upload_result = upload_contract(
+                                    uploaded_file.name,
+                                    file_content,
+                                    uploaded_file.type or "application/octet-stream",
+                                )
+                                processed_doc = document_from_api(upload_result["document"])
+                                st.session_state.api_document_id = upload_result["document_id"]
+                                st.session_state.uploaded_file_signature = file_signature
+                                st.session_state.analysis_results = None
+                                st.session_state.compliance_report = None
+                                st.session_state.recommendations = None
                             
                             # Store in session state
                             st.session_state.processed_document = processed_doc
-                            
-                            # Clean up temp file
-                            os.unlink(tmp_path)
                             
                             # Display success
                             st.success(f"✅ Document processed successfully!")
@@ -1045,7 +1046,11 @@ with tab1:
                     
                     # Process batch (without progress callback to avoid thread issues)
                     try:
-                        batch_processor = BatchProcessor(max_workers=3, max_files=10)
+                        batch_processor = BatchProcessor(
+                            max_workers=3,
+                            max_files=10,
+                            enable_slack=slack_alerts,
+                        )
                         
                         # Show indeterminate progress
                         progress_bar.progress(0.5)
@@ -1070,6 +1075,8 @@ with tab1:
                         # Store batch results in session state
                         st.session_state.batch_summary = summary
                         st.session_state.batch_mode = True
+                        st.session_state.batch_rewrite_zip = None
+                        st.session_state.batch_rewrite_zip_name = None
 
                         first_success = next((r for r in summary.results if r.success), None)
                         if first_success and load_batch_result_into_session(first_success):
@@ -1189,8 +1196,10 @@ with tab1:
                 if st.button("Process Text", use_container_width=True):
                     with st.spinner("Processing text..."):
                         try:
-                            doc_processor = get_document_processor()
-                            processed_doc = doc_processor.process_text(contract_text)
+                            upload_result = upload_contract_text(contract_text)
+                            processed_doc = document_from_api(upload_result["document"])
+                            st.session_state.api_document_id = upload_result["document_id"]
+                            st.session_state.uploaded_file_signature = None
                             
                             # Store in session state
                             st.session_state.processed_document = processed_doc
@@ -1232,11 +1241,12 @@ with tab1:
                                 
                                 # Process the extracted text
                                 with st.spinner("Processing contract..."):
-                                    doc_processor = get_document_processor()
-                                    processed_doc = doc_processor.process_text(
-                                        text=contract_text,
-                                        filename="GoogleSheets_Contract.txt"
+                                    upload_result = upload_contract_text(
+                                        contract_text, "GoogleSheets_Contract.txt"
                                     )
+                                    processed_doc = document_from_api(upload_result["document"])
+                                    st.session_state.api_document_id = upload_result["document_id"]
+                                    st.session_state.uploaded_file_signature = None
                                     
                                     # Store in session state
                                     st.session_state.processed_document = processed_doc
@@ -1289,32 +1299,24 @@ with tab1:
             else:
                 with st.spinner("Analyzing contract for compliance..."):
                     try:
-                        # Get services
-                        nlp_analyzer = get_nlp_analyzer()
-                        compliance_checker = get_compliance_checker()
-                        recommendation_engine = get_recommendation_engine()
                         
                         # Step 1: NLP Analysis
                         st.info("🔍 Step 1/3: Analyzing clauses...")
-                        clause_analyses = nlp_analyzer.analyze_clauses(
-                            st.session_state.processed_document.clauses
+                        api_result, api_document_id = analyze_processed_document(
+                            st.session_state.processed_document,
+                            st.session_state.api_document_id,
+                            st.session_state.selected_frameworks,
                         )
+                        st.session_state.api_document_id = api_document_id
+                        clause_analyses, compliance_report, recommendations = result_from_api(api_result)
                         st.session_state.analysis_results = clause_analyses
                         
                         # Step 2: Compliance Checking
                         st.info("⚖️ Step 2/3: Checking compliance...")
-                        compliance_report = compliance_checker.check_compliance(
-                            clause_analyses,
-                            st.session_state.selected_frameworks,
-                            st.session_state.processed_document.document_id
-                        )
                         st.session_state.compliance_report = compliance_report
                         
                         # Step 3: Generate Recommendations
                         st.info("💡 Step 3/3: Generating recommendations...")
-                        recommendations = recommendation_engine.generate_recommendations(
-                            compliance_report
-                        )
                         st.session_state.recommendations = recommendations
                         
                         # Add to history
@@ -1657,6 +1659,7 @@ with tab3:
                 _display_clause_details(display_report, display_recommendations, key_prefix=f"batch_{i}_")
                 
                 st.markdown("---" * 20)
+
             elif not result.success:
                 st.error(f"❌ {i}. {result.filename} - {result.error}")
                 st.markdown("---")
@@ -1678,8 +1681,59 @@ with tab4:
         
         summary = st.session_state.batch_summary
         files_with_missing = [r for r in summary.results if r.success and r.compliance_results and r.compliance_results.missing_requirements]
+
+        st.markdown("#### Contracts in this batch")
+        for result in summary.results:
+            if result.success and result.compliance_results:
+                missing_count = len(result.compliance_results.missing_requirements)
+                st.write(
+                    f"**{result.filename}** — analyzed individually; "
+                    f"{missing_count} missing requirement(s)"
+                )
+            else:
+                st.write(f"**{result.filename}** — processing failed: {result.error or 'unknown error'}")
         
         if files_with_missing:
+            st.caption(
+                f"{len(files_with_missing)} contract(s) have missing requirements. "
+                "Each contract gets its own generated clauses and rewritten file."
+            )
+            if st.button(
+                "Generate clauses for each contract",
+                type="primary",
+                key="autofix_generate_all_batch_contracts",
+            ):
+                try:
+                    from services.document_updater import DocumentUpdater
+
+                    updater = st.session_state.get("document_updater") or DocumentUpdater()
+                    st.session_state.document_updater = updater
+                    generated_by_document = st.session_state.setdefault(
+                        "generated_clauses_by_document", {}
+                    )
+                    progress = st.progress(0)
+                    status = st.empty()
+                    for index, result in enumerate(files_with_missing, 1):
+                        report = result.compliance_results
+                        identifier = f"{result.filename}_{report.document_id}"
+                        key_suffix = "".join(
+                            char if char.isalnum() or char == "_" else "_"
+                            for char in identifier
+                        )
+                        status.info(f"Generating clauses for {result.filename} ({index}/{len(files_with_missing)})")
+                        generated_by_document[key_suffix] = updater.generate_missing_clauses(
+                            missing_requirements=report.missing_requirements,
+                            existing_contract_text=result.processed_document.extracted_text,
+                            prioritize=True,
+                            top_n=len(report.missing_requirements),
+                        )
+                        progress.progress(index / len(files_with_missing))
+                    status.success("Generated clauses separately for every eligible contract.")
+                    st.rerun()
+                except Exception as exc:
+                    st.error(f"Batch clause generation failed: {exc}")
+                    logger.exception("Batch clause generation failed")
+
             for i, result in enumerate(files_with_missing, 1):
                 st.markdown(f"## 📄 {i}. {result.filename}")
                 display_report = result.compliance_results
@@ -1688,6 +1742,59 @@ with tab4:
                 _display_autofix_section(display_report, result.filename, result.processed_document)
                 
                 st.markdown("---" * 20)
+            generated_by_document = st.session_state.get("generated_clauses_by_document", {})
+            ready_to_rewrite = []
+            for result in files_with_missing:
+                identifier = f"{result.filename}_{result.compliance_results.document_id}"
+                key_suffix = "".join(
+                    char if char.isalnum() or char == "_" else "_"
+                    for char in identifier
+                )
+                generated = generated_by_document.get(key_suffix, [])
+                if generated:
+                    ready_to_rewrite.append((result, generated))
+
+            if ready_to_rewrite:
+                st.markdown("### Download all rewritten contracts")
+                st.caption("The ZIP contains a separate rewritten file for each contract with generated clauses.")
+                if st.button("Create ZIP of rewritten contracts", key="create_batch_rewrite_zip"):
+                    try:
+                        updater = st.session_state.get("document_updater") or DocumentUpdater()
+                        zip_buffer = io.BytesIO()
+                        used_names = set()
+                        with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as archive:
+                            for result, generated in ready_to_rewrite:
+                                safe_name = re.sub(
+                                    r"[^A-Za-z0-9_-]+", "_", Path(result.filename).stem
+                                ).strip("_") or "contract"
+                                archive_name = f"{safe_name}_rewritten.docx"
+                                suffix = 2
+                                while archive_name.lower() in used_names:
+                                    archive_name = f"{safe_name}_rewritten_{suffix}.docx"
+                                    suffix += 1
+                                used_names.add(archive_name.lower())
+                                updated = updater.create_updated_document(
+                                    original_text=result.processed_document.extracted_text,
+                                    generated_clauses=generated,
+                                    output_format="docx",
+                                )
+                                archive.writestr(archive_name, updated.getvalue())
+                        st.session_state.batch_rewrite_zip = zip_buffer.getvalue()
+                        st.session_state.batch_rewrite_zip_name = (
+                            f"rewritten_contracts_{datetime.now().strftime('%Y%m%d_%H%M%S')}.zip"
+                        )
+                    except Exception as exc:
+                        st.error(f"Could not create rewritten contract ZIP: {exc}")
+                        logger.exception("Batch rewrite ZIP creation failed")
+
+                if st.session_state.get("batch_rewrite_zip"):
+                    st.download_button(
+                        "Download all rewritten contracts (.zip)",
+                        data=st.session_state.batch_rewrite_zip,
+                        file_name=st.session_state.batch_rewrite_zip_name,
+                        mime="application/zip",
+                        key="download_batch_rewrite_zip",
+                    )
         else:
             st.success("✅ No files with missing requirements - all contracts are compliant!")
     elif st.session_state.compliance_report:

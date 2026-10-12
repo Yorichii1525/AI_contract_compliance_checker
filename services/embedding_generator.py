@@ -50,7 +50,9 @@ class EmbeddingGenerator:
             
         try:
             logger.info(f"Loading Sentence Transformer model: {_self.model_name}")
-            model = SentenceTransformer(_self.model_name)
+            # Avoid repeated Hub HEAD/retry requests when the model is already
+            # cached (or when the runtime has no network access).
+            model = SentenceTransformer(_self.model_name, local_files_only=True)
             logger.info("Sentence Transformer model loaded successfully")
             return model
         except Exception as e:

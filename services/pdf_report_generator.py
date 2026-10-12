@@ -10,6 +10,7 @@ Generates industry-standard PDF reports with:
 """
 import os
 import io
+import uuid
 from datetime import datetime
 from typing import Dict, Any, List, Optional
 from pathlib import Path
@@ -60,6 +61,9 @@ class PDFReportGenerator:
         """
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
+        # Track only this report's chart files. The reports directory is shared
+        # by Streamlit sessions, so broad glob cleanup can break another export.
+        self._chart_files: List[Path] = []
         
         # Setup styles
         self.styles = getSampleStyleSheet()
@@ -218,10 +222,12 @@ class PDFReportGenerator:
         ax.set_title('Compliance Score', fontsize=14, fontweight='bold', pad=20)
         
         # Save to temp file
-        temp_path = self.output_dir / f"gauge_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+        temp_path = self.output_dir / f"gauge_{uuid.uuid4().hex}.png"
         plt.tight_layout()
         plt.savefig(temp_path, dpi=100, bbox_inches='tight', transparent=True)
         plt.close()
+        temp_path = temp_path.resolve()
+        self._chart_files.append(temp_path)
         
         return str(temp_path)
     
@@ -272,10 +278,12 @@ class PDFReportGenerator:
         ax.spines['right'].set_visible(False)
         
         # Save to temp file
-        temp_path = self.output_dir / f"risk_dist_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+        temp_path = self.output_dir / f"risk_dist_{uuid.uuid4().hex}.png"
         plt.tight_layout()
         plt.savefig(temp_path, dpi=100, bbox_inches='tight')
         plt.close()
+        temp_path = temp_path.resolve()
+        self._chart_files.append(temp_path)
         
         return str(temp_path)
     
@@ -333,10 +341,12 @@ class PDFReportGenerator:
         ax.spines['right'].set_visible(False)
         
         # Save to temp file
-        temp_path = self.output_dir / f"framework_{datetime.now().strftime('%Y%m%d_%H%M%S')}.png"
+        temp_path = self.output_dir / f"framework_{uuid.uuid4().hex}.png"
         plt.tight_layout()
         plt.savefig(temp_path, dpi=100, bbox_inches='tight')
         plt.close()
+        temp_path = temp_path.resolve()
+        self._chart_files.append(temp_path)
         
         return str(temp_path)
     
@@ -395,7 +405,7 @@ class PDFReportGenerator:
         if not output_filename:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
             contract_name = analysis_results.get('contract_name', 'contract').replace('.pdf', '')
-            output_filename = f"compliance_report_{contract_name}_{timestamp}.pdf"
+            output_filename = f"compliance_report_{contract_name}_{timestamp}_{uuid.uuid4().hex[:8]}.pdf"
         
         output_path = self.output_dir / output_filename
         
@@ -639,22 +649,13 @@ class PDFReportGenerator:
         
         logger.info(f"PDF report generated: {output_path}")
         
-        # Cleanup temp chart files
-        for temp_file in self.output_dir.glob("gauge_*.png"):
+        # Remove only chart files created by this generator instance.
+        for temp_file in self._chart_files:
             try:
                 temp_file.unlink()
             except:
                 pass
-        for temp_file in self.output_dir.glob("risk_dist_*.png"):
-            try:
-                temp_file.unlink()
-            except:
-                pass
-        for temp_file in self.output_dir.glob("framework_*.png"):
-            try:
-                temp_file.unlink()
-            except:
-                pass
+        self._chart_files.clear()
         
         return str(output_path)
 

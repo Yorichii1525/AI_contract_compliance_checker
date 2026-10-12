@@ -137,7 +137,8 @@ class SlackNotifier:
                 response = requests.post(
                     self.webhook_url,
                     json=payload,
-                    headers={'Content-Type': 'application/json'}
+                    headers={'Content-Type': 'application/json'},
+                    timeout=5,
                 )
                 
                 if response.status_code == 200:

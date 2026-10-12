@@ -222,15 +222,17 @@ class ContractModificationEngine:
             Amendment details dictionary
         """
         try:
-            import openai
+            from openai import OpenAI
             import os
             
-            # Configure OpenAI
-            openai.api_key = os.getenv('OPENAI_API_KEY')
+            # Initialize the current OpenAI SDK client
+            api_key = os.getenv('OPENAI_API_KEY')
             
-            if not openai.api_key:
+            if not api_key:
                 self.logger.warning("OpenAI API key not configured, using template")
                 return self._generate_template_amendment(clause, regulation)
+
+            client = OpenAI(api_key=api_key)
             
             # Build prompt
             prompt = f"""You are a legal compliance expert. Generate an amended version of the following contract clause to comply with a new regulatory requirement.
@@ -257,7 +259,7 @@ Remaining Considerations: [Any additional notes]
 """
             
             # Call OpenAI API
-            response = openai.ChatCompletion.create(
+            response = client.chat.completions.create(
                 model=os.getenv('OPENAI_MODEL', 'gpt-4'),
                 messages=[
                     {"role": "system", "content": "You are a legal compliance expert specializing in contract amendments."},
