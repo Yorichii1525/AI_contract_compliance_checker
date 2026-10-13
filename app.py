@@ -143,6 +143,34 @@ st.markdown("""
 
 # Initialize services with caching
 @st.cache_resource
+def get_document_processor():
+    """Initialize and cache document processor."""
+    from services.document_processor import DocumentProcessor
+    logger.info("Initializing DocumentProcessor...")
+    return DocumentProcessor()
+
+@st.cache_resource
+def get_nlp_analyzer():
+    """Initialize and cache NLP analyzer."""
+    from services.nlp_analyzer import NLPAnalyzer
+    logger.info("Initializing NLPAnalyzer...")
+    return NLPAnalyzer()
+
+@st.cache_resource
+def get_compliance_checker():
+    """Initialize and cache compliance checker."""
+    from services.compliance_checker import ComplianceChecker
+    logger.info("Initializing ComplianceChecker...")
+    return ComplianceChecker()
+
+@st.cache_resource
+def get_recommendation_engine():
+    """Initialize and cache recommendation engine."""
+    from services.recommendation_engine import RecommendationEngine
+    logger.info("Initializing RecommendationEngine...")
+    return RecommendationEngine(use_llama=False)
+
+@st.cache_resource
 def get_export_service():
     """Initialize and cache export service."""
     logger.info("Initializing ExportService...")
