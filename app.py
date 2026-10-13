@@ -980,13 +980,27 @@ with tab1:
                             if st.session_state.uploaded_file_signature == file_signature:
                                 processed_doc = st.session_state.processed_document
                             else:
-                                upload_result = upload_contract(
-                                    uploaded_file.name,
-                                    file_content,
-                                    uploaded_file.type or "application/octet-stream",
-                                )
-                                processed_doc = document_from_api(upload_result["document"])
-                                st.session_state.api_document_id = upload_result["document_id"]
+                                try:
+                                    upload_result = upload_contract(
+                                        uploaded_file.name,
+                                        file_content,
+                                        uploaded_file.type or "application/octet-stream",
+                                    )
+                                    processed_doc = document_from_api(upload_result["document"])
+                                    st.session_state.api_document_id = upload_result["document_id"]
+                                except Exception as api_err:
+                                    logger.warning(f"Backend API unavailable ({api_err}), falling back to local document processor")
+                                    with tempfile.NamedTemporaryFile(delete=False, suffix=Path(uploaded_file.name).suffix) as tmp_file:
+                                        tmp_file.write(file_content)
+                                        tmp_path = tmp_file.name
+                                    doc_processor = get_document_processor()
+                                    processed_doc = doc_processor.process_document(tmp_path)
+                                    try:
+                                        os.unlink(tmp_path)
+                                    except Exception:
+                                        pass
+                                    st.session_state.api_document_id = None
+                                
                                 st.session_state.uploaded_file_signature = file_signature
                                 st.session_state.analysis_results = None
                                 st.session_state.compliance_report = None
@@ -1300,24 +1314,48 @@ with tab1:
                 with st.spinner("Analyzing contract for compliance..."):
                     try:
                         
-                        # Step 1: NLP Analysis
-                        st.info("🔍 Step 1/3: Analyzing clauses...")
-                        api_result, api_document_id = analyze_processed_document(
-                            st.session_state.processed_document,
-                            st.session_state.api_document_id,
-                            st.session_state.selected_frameworks,
-                        )
-                        st.session_state.api_document_id = api_document_id
-                        clause_analyses, compliance_report, recommendations = result_from_api(api_result)
-                        st.session_state.analysis_results = clause_analyses
-                        
-                        # Step 2: Compliance Checking
-                        st.info("⚖️ Step 2/3: Checking compliance...")
-                        st.session_state.compliance_report = compliance_report
-                        
-                        # Step 3: Generate Recommendations
-                        st.info("💡 Step 3/3: Generating recommendations...")
-                        st.session_state.recommendations = recommendations
+                        # Step 1-3: Analysis via Backend API (or Local Fallback)
+                        try:
+                            st.info("🔍 Step 1/3: Analyzing clauses...")
+                            api_result, api_document_id = analyze_processed_document(
+                                st.session_state.processed_document,
+                                st.session_state.api_document_id,
+                                st.session_state.selected_frameworks,
+                            )
+                            st.session_state.api_document_id = api_document_id
+                            clause_analyses, compliance_report, recommendations = result_from_api(api_result)
+                            st.session_state.analysis_results = clause_analyses
+                            
+                            st.info("⚖️ Step 2/3: Checking compliance...")
+                            st.session_state.compliance_report = compliance_report
+                            
+                            st.info("💡 Step 3/3: Generating recommendations...")
+                            st.session_state.recommendations = recommendations
+                        except Exception as api_err:
+                            logger.warning(f"Backend API call failed ({api_err}), running local analysis engine")
+                            nlp_analyzer = get_nlp_analyzer()
+                            compliance_checker = get_compliance_checker()
+                            recommendation_engine = get_recommendation_engine()
+
+                            st.info("🔍 Step 1/3: Analyzing clauses locally...")
+                            clause_analyses = nlp_analyzer.analyze_clauses(
+                                st.session_state.processed_document.clauses
+                            )
+                            st.session_state.analysis_results = clause_analyses
+
+                            st.info("⚖️ Step 2/3: Checking compliance locally...")
+                            compliance_report = compliance_checker.check_compliance(
+                                clause_analyses,
+                                st.session_state.selected_frameworks,
+                                st.session_state.processed_document.document_id,
+                            )
+                            st.session_state.compliance_report = compliance_report
+
+                            st.info("💡 Step 3/3: Generating recommendations locally...")
+                            recommendations = recommendation_engine.generate_recommendations(
+                                compliance_report
+                            )
+                            st.session_state.recommendations = recommendations
                         
                         # Add to history
                         st.session_state.contract_history.append({

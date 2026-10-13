@@ -18,12 +18,27 @@ from models.regulatory_requirement import (
     RiskLevel,
 )
 
-API_BASE_URL = os.getenv("COMPLIANCE_API_URL", "http://127.0.0.1:8000")
+def get_api_base_url() -> str:
+    """Retrieve API base URL from streamlit secrets, env vars, or default."""
+    try:
+        import streamlit as st
+        if hasattr(st, "secrets") and "COMPLIANCE_API_URL" in st.secrets:
+            return str(st.secrets["COMPLIANCE_API_URL"]).rstrip("/")
+    except Exception:
+        pass
+    return os.getenv("COMPLIANCE_API_URL", "http://127.0.0.1:8000").rstrip("/")
+
+
+def get_api_url(path: str) -> str:
+    """Helper to build full URL from path."""
+    base = get_api_base_url()
+    path = path.lstrip("/")
+    return f"{base}/{path}"
 
 
 def upload_contract(file_name: str, content: bytes, content_type: str = "application/octet-stream") -> Dict[str, Any]:
     response = requests.post(
-        f"{API_BASE_URL}/api/v1/documents/upload",
+        get_api_url("/api/v1/documents/upload"),
         files={"file": (file_name, content, content_type)},
         timeout=180,
     )
@@ -33,7 +48,7 @@ def upload_contract(file_name: str, content: bytes, content_type: str = "applica
 
 def upload_contract_text(text: str, file_name: str = "Pasted_Contract.txt") -> Dict[str, Any]:
     response = requests.post(
-        f"{API_BASE_URL}/api/v1/documents/text",
+        get_api_url("/api/v1/documents/text"),
         json={"text": text, "filename": file_name},
         timeout=180,
     )
@@ -43,7 +58,7 @@ def upload_contract_text(text: str, file_name: str = "Pasted_Contract.txt") -> D
 
 def analyze_contract(document_id: str, frameworks: List[str]) -> Dict[str, Any]:
     response = requests.post(
-        f"{API_BASE_URL}/api/v1/compliance/analyze",
+        get_api_url("/api/v1/compliance/analyze"),
         json={"document_id": document_id, "frameworks": frameworks},
         timeout=900,
     )
